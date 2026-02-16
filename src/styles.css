@@ -1,0 +1,806 @@
+/* ==========================================================================
+   DANTE'S OUTLAW SUPPLY - CATALOG STYLES
+   Vintage Sears Roebuck aesthetic with occult undertones
+   ========================================================================== */
+
+:root {
+  /* Paper tones - aged catalog stock */
+  --paper-base: #f4e8d3;
+  --paper-aged: #e8d9c0;
+  --paper-dark: #d4c4a8;
+  --paper-shadow: #c4b090;
+  
+  /* Ink tones */
+  --ink-black: #1a1612;
+  --ink-faded: #3d3428;
+  --ink-light: #6b5d4d;
+  --ink-ghost: #8b7d6d;
+  
+  /* Accent */
+  --seal-red: #6b2020;
+  --seal-deep: #4a1515;
+  
+  /* Typography scale */
+  --type-xs: 0.65rem;
+  --type-sm: 0.75rem;
+  --type-base: 0.875rem;
+  --type-lg: 1rem;
+  --type-xl: 1.25rem;
+  --type-2xl: 1.5rem;
+  --type-3xl: 2rem;
+}
+
+/* ==========================================================================
+   BASE RESET
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--ink-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   CATALOG CONTAINER
+   ========================================================================== */
+
+.catalog-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink-black);
+  position: relative;
+}
+
+/* Subtle vignette around the whole viewport */
+.catalog-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* ==========================================================================
+   INDEX / TABLE OF CONTENTS - Floating Navigation
+   ========================================================================== */
+
+.catalog-index {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: var(--paper-aged);
+  border: 1px solid var(--ink-ghost);
+  padding: 12px 16px;
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  color: var(--ink-faded);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  max-width: 180px;
+  
+  /* Aged paper texture overlay */
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E"),
+    linear-gradient(to bottom, var(--paper-base) 0%, var(--paper-aged) 100%);
+}
+
+.catalog-index h3 {
+  font-family: 'Cinzel', serif;
+  font-size: var(--type-xs);
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+  color: var(--ink-black);
+  border-bottom: 1px solid var(--ink-ghost);
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.catalog-index ul {
+  list-style: none;
+}
+
+.catalog-index li {
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.catalog-index li:hover {
+  color: var(--ink-black);
+}
+
+.catalog-index li.active {
+  color: var(--seal-red);
+}
+
+.catalog-index .page-num {
+  font-size: 0.6rem;
+  color: var(--ink-ghost);
+}
+
+/* ==========================================================================
+   PAGE STYLES - The Paper
+   ========================================================================== */
+
+.page {
+  background: var(--paper-base);
+  position: relative;
+  overflow: hidden;
+  
+  /* Multi-layer aged paper effect */
+  background-image:
+    /* Noise grain overlay */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.05'/%3E%3C/svg%3E"),
+    /* Subtle staining */
+    radial-gradient(ellipse at 20% 80%, rgba(180, 160, 120, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(160, 140, 100, 0.1) 0%, transparent 40%),
+    /* Age gradation */
+    linear-gradient(to bottom, var(--paper-base) 0%, var(--paper-aged) 50%, var(--paper-dark) 100%);
+}
+
+/* Page edge shadow for depth */
+.page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  background: linear-gradient(to left, rgba(0,0,0,0.08), transparent);
+  pointer-events: none;
+}
+
+/* Left pages get shadow on left edge */
+.page.left::after {
+  right: auto;
+  left: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.08), transparent);
+}
+
+/* Page content wrapper */
+.page-content {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   COVER PAGE
+   ========================================================================== */
+
+.cover-page {
+  background: var(--ink-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--paper-aged);
+}
+
+.cover-page .brand-name {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  letter-spacing: 0.25em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.cover-page .tagline {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+}
+
+.cover-page .volume {
+  position: absolute;
+  bottom: 40px;
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
+
+/* Decorative border for cover */
+.cover-page::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid var(--paper-shadow);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   COWBOY ILLUSTRATION PAGE
+   ========================================================================== */
+
+.cowboy-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.cowboy-illustration {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3/4;
+  background: var(--paper-dark);
+  border: 1px solid var(--ink-ghost);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  
+  /* Sepia filter frame */
+  box-shadow: 
+    inset 0 0 30px rgba(0,0,0,0.1),
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Breathing animation container */
+.cinemagraph-container {
+  position: relative;
+}
+
+/* Subtle breathing effect - imperceptible loop */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.003);
+  }
+}
+
+.cowboy-illustration.breathing {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+.verse-text {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: var(--type-md);
+  color: var(--ink-faded);
+  text-align: center;
+  max-width: 300px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.verse-scales {
+  font-size: 1.5rem;
+  font-style: normal;
+  opacity: 0.5;
+  display: block;
+}
+
+.verse-main {
+  display: block;
+  letter-spacing: 0.02em;
+}
+
+.price-display {
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-2xl);
+  color: var(--ink-black);
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   DETAILS PAGE - Glued Photo Aesthetic
+   ========================================================================== */
+
+.details-page {
+  padding: 30px;
+}
+
+.details-page h2 {
+  font-family: 'Cinzel', serif;
+  font-size: var(--type-lg);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--ink-black);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* Glued-on polaroid/photo effect */
+.glued-photo {
+  background: #faf8f3;
+  padding: 8px;
+  padding-bottom: 24px;
+  box-shadow: 
+    0 2px 4px rgba(0,0,0,0.1),
+    0 4px 8px rgba(0,0,0,0.05);
+  transform: rotate(var(--rotation, 0deg));
+  position: relative;
+}
+
+.glued-photo:nth-child(1) { --rotation: -2deg; }
+.glued-photo:nth-child(2) { --rotation: 1.5deg; }
+.glued-photo:nth-child(3) { --rotation: 0.5deg; }
+.glued-photo:nth-child(4) { --rotation: -1deg; }
+
+.glued-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: sepia(10%) contrast(1.05);
+}
+
+/* Photo crop container for zoom effects */
+.photo-crop {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-crop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.photo-crop.zoom img {
+  transform: scale(2.2);
+}
+
+/* Photo corner tabs */
+.glued-photo::before,
+.glued-photo::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(200, 180, 140, 0.6);
+  z-index: 1;
+}
+
+.glued-photo::before {
+  top: -2px;
+  left: 10px;
+  transform: rotate(-5deg);
+}
+
+.glued-photo::after {
+  bottom: 20px;
+  right: 10px;
+  transform: rotate(3deg);
+}
+
+.photo-caption {
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  color: var(--ink-faded);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.materials-list {
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--type-sm);
+  color: var(--ink-faded);
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ==========================================================================
+   ORDER FORM STYLES
+   ========================================================================== */
+
+.order-form-page {
+  padding: 24px;
+}
+
+.order-form-page h2 {
+  font-family: 'Cinzel', serif;
+  font-size: var(--type-base);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--ink-black);
+}
+
+/* Form boxes - bureaucratic government form aesthetic */
+.form-box {
+  border: 1px solid var(--ink-faded);
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background: rgba(255,255,255,0.3);
+}
+
+.form-box.inline-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-box.inline-group > * {
+  flex: 1;
+}
+
+.box-label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  background: var(--paper-base);
+  padding: 0 4px;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.55rem;
+  color: var(--ink-ghost);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.box-number {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background: var(--ink-black);
+  color: var(--paper-base);
+  font-family: 'Special Elite', monospace;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-sm);
+  color: var(--ink-black);
+  padding: 4px 0;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--ink-ghost);
+  opacity: 0.5;
+}
+
+/* Size checkboxes */
+.size-options {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+.size-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.size-checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--ink-faded);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Special Elite', monospace;
+  font-size: 0.6rem;
+}
+
+.size-checkbox.checked::after {
+  content: '✕';
+  color: var(--ink-black);
+}
+
+.size-label {
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  color: var(--ink-faded);
+}
+
+/* Official Use Only box */
+.official-use {
+  border: 1px dashed var(--ink-ghost);
+  padding: 12px;
+  margin-top: 16px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.official-use span {
+  font-family: 'Special Elite', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-ghost);
+  text-transform: uppercase;
+}
+
+/* Turn over prompt */
+.turn-prompt {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  color: var(--ink-ghost);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.turn-prompt:hover {
+  color: var(--ink-faded);
+}
+
+/* ==========================================================================
+   ORDER FORM BACK - Payment & Signature
+   ========================================================================== */
+
+/* Billing same checkbox */
+.billing-same {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.billing-same .checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--ink-faded);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5rem;
+}
+
+.billing-same .checkbox.checked::after {
+  content: '✕';
+}
+
+.billing-same span {
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-xs);
+  color: var(--ink-faded);
+}
+
+/* Greyed billing fields when same as shipping */
+.billing-fields.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Signature area */
+.signature-section {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.signature-disclaimer {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: var(--type-xs);
+  color: var(--ink-faded);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.signature-canvas-wrapper {
+  border: 1px solid var(--ink-faded);
+  background: rgba(255,255,255,0.5);
+  height: 60px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.signature-canvas {
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.signature-x {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  font-family: 'Special Elite', monospace;
+  font-size: var(--type-sm);
+  color: var(--ink-ghost);
+  pointer-events: none;
+}
+
+.signature-line {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  right: 12px;
+  height: 1px;
+  background: var(--ink-ghost);
+  pointer-events: none;
+}
+
+/* Order button - looks like part of the form */
+.order-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  background: var(--ink-black);
+  color: var(--paper-base);
+  border: none;
+  font-family: 'Cinzel', serif;
+  font-size: var(--type-sm);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Disabled state - just doesn't respond, no visual change */
+.order-button.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.order-button:not(.disabled):hover {
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   FLIPBOOK OVERRIDES
+   ========================================================================== */
+
+.stf__wrapper {
+  margin: 0 auto;
+}
+
+/* Page shadow during flip */
+.stf__shadow {
+  opacity: 0.3 !important;
+}
+
+/* Hard cover pages */
+.page.hard {
+  background: var(--ink-black);
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-height: 600px) {
+  .page-content {
+    padding: 20px;
+  }
+  
+  .catalog-index {
+    padding: 8px 12px;
+    font-size: 0.55rem;
+  }
+  
+  .form-box {
+    padding: 6px 8px;
+    margin-bottom: 6px;
+  }
+  
+  .signature-canvas-wrapper {
+    height: 50px;
+  }
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+/* Fade in on load */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.catalog-wrapper {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Subtle hover lift for interactive elements */
+.glued-photo:hover {
+  transform: rotate(var(--rotation, 0deg)) translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--ink-black);
+  color: var(--paper-aged);
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.2em;
+  font-size: var(--type-sm);
+}
+
+/* ==========================================================================
+   ORDER CONFIRMATION
+   ========================================================================== */
+
+.confirmation-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.5s ease;
+}
+
+.confirmation-content {
+  text-align: center;
+  color: var(--paper-aged);
+  padding: 40px;
+}
+
+.confirmation-content h2 {
+  font-family: 'Cinzel', serif;
+  font-size: var(--type-xl);
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+
+.confirmation-content p {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  opacity: 0.7;
+}

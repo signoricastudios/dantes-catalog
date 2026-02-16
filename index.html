@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#1a1612" />
+    <title>Dante's Outlaw Supply</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Typewriter fonts: Special Elite for form fields, Courier Prime for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Prevent any flash of unstyled content */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #1a1612;
+      }
+      
+      /* Lock to landscape on mobile */
+      @media screen and (orientation: portrait) and (max-width: 1024px) {
+        #root::before {
+          content: '';
+          position: fixed;
+          inset: 0;
+          background: #1a1612;
+          z-index: 99999;
+        }
+        #root::after {
+          content: 'ROTATE DEVICE';
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #8b7355;
+          font-family: 'Cinzel', serif;
+          font-size: 14px;
+          letter-spacing: 0.3em;
+          z-index: 100000;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
