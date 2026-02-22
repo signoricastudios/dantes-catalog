@@ -63,7 +63,7 @@ const ProductPage = forwardRef((props, ref) => (
       {/* Illustration */}
       <div className="product-illustration-wrap">
         <img 
-          src="/cowboy.svg" 
+          src="/IMG_1147.jpeg" 
           alt="The Highwayman"
           className="product-illustration"
         />
