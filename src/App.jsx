@@ -48,58 +48,124 @@ const InsideCover = forwardRef((props, ref) => (
 ))
 
 // =============================================================================
-// PRODUCT PAGE - The Highwayman with floating illustration
+// PRODUCT PAGE - The Highwayman (Gambler-style catalog layout)
 // =============================================================================
 
 const ProductPage = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="product-page">
-      {/* Header */}
-      <div className="product-header">
-        <span className="product-name">THE HIGHWAYMAN</span>
-        <span className="product-price">$299</span>
+      {/* Catalog header line */}
+      <div className="product-catalog-line">
+        <span className="product-item-no">No. 001</span>
+        <span className="product-collection">FAMINE COLLECTION · VOL. I</span>
       </div>
-      
-      {/* Illustration */}
-      <div className="product-illustration-wrap">
-        <img 
-          src="/IMG_1147.jpeg" 
-          alt="The Highwayman"
-          className="product-illustration"
-        />
+
+      {/* Title + Price bar */}
+      <div className="product-title-bar">
+        <h2 className="product-name">THE HIGHWAYMAN</h2>
+        <div className="product-price-group">
+          <span className="product-price-dollar">$</span>
+          <span className="product-price-amount">299</span>
+        </div>
       </div>
-      
-      {/* Footer */}
-      <p className="product-verse">"What you carry will be weighed."</p>
-      <p className="product-specs">
-        Black Cavalry Twill · Western Yoke · Contrast Stitching
-      </p>
+
+      <div className="product-tagline">A Cavalry Jacket for the Discerning Rider</div>
+
+      <hr className="catalog-rule" />
+
+      {/* Main content — illustration left, text right */}
+      <div className="product-content">
+        <div className="product-illustration-col">
+          <img
+            src="/IMG_1147.jpeg"
+            alt="The Highwayman"
+            className="product-illustration"
+          />
+        </div>
+        <div className="product-text-col">
+          <p className="product-copy">
+            A jacket of superior construction, designed for those
+            who ride between worlds. Cut from the finest black
+            Cavalry Twill with contrast stitching in the Western
+            Saddle Pattern throughout.
+          </p>
+          <p className="product-copy">
+            The back panel features our signature vertebrae
+            detail — hand-stitched in contrast thread to resemble
+            a spine made visible. Black suede collar. Diamond
+            chain stitch placket. Wheat symbol at the yoke — mark
+            of the Famine rider.
+          </p>
+          <div className="product-spec-divider">———</div>
+          <div className="product-spec-list">
+            <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
+            <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
+            <p><span>COLLAR</span> Black Suede</p>
+            <p><span>STITCH</span> Contrast, Saddle Pattern</p>
+            <p><span>BACK</span> Vertebrae Spine Detail</p>
+            <p><span>YOKE</span> Wheat Symbol — Famine</p>
+            <p><span>PLACKET</span> Diamond Chain Stitch</p>
+          </div>
+          <p className="product-sizing">S (36") · M (40") · L (44") · XL (48")</p>
+        </div>
+      </div>
+
+      {/* Bottom verse */}
+      <div className="product-footer">
+        <hr className="catalog-rule" />
+        <p className="product-verse">"What you carry will be weighed."</p>
+      </div>
     </div>
   </div>
 ))
 
 // =============================================================================
-// DETAILS PAGE - Tech pack photos, glued-in look
+// DETAILS PAGE - Construction with tech pack photos (right side of spread)
 // =============================================================================
 
 const DetailsPage = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="details-page">
-      <h2 className="details-title">CONSTRUCTION</h2>
-      
-      <div className="spec-block">
-        <p className="spec-item"><span>SHELL</span> 100% Cotton Cavalry Twill</p>
-        <p className="spec-item"><span>COLOR</span> Black (PANTONE 19-4006 TCX)</p>
-        <p className="spec-item"><span>COLLAR</span> Black Suede</p>
-        <p className="spec-item"><span>STITCH</span> Contrast Thread, Saddle Pattern</p>
-        <p className="spec-item"><span>BACK</span> Vertebrae Spine Detail</p>
-        <p className="spec-item"><span>YOKE</span> Wheat Symbol (Famine)</p>
-        <p className="spec-item"><span>PLACKET</span> Diamond Chain Stitch</p>
+      <div className="details-header">
+        <h2 className="details-title">CONSTRUCTION</h2>
+        <span className="details-subtitle">Specifications & Technical Detail</span>
       </div>
-      
-      <div className="sizing-note">
-        <p>Sized true to chest measurement.</p>
-        <p>S (36") · M (40") · L (44") · XL (48")</p>
+
+      <hr className="catalog-rule" />
+
+      {/* Tech pack photos side by side */}
+      <div className="details-photos">
+        <div className="details-photo-wrap">
+          <img src="/IMG_0851.jpeg" alt="Front view" className="details-photo" />
+          <span className="details-photo-label">Fig. A — Front</span>
+        </div>
+        <div className="details-photo-wrap">
+          <img src="/IMG_0852.jpeg" alt="Back view" className="details-photo" />
+          <span className="details-photo-label">Fig. B — Back</span>
+        </div>
+      </div>
+
+      <hr className="catalog-rule" />
+
+      {/* Construction callouts */}
+      <div className="details-callouts">
+        <p className="callout-item"><span className="callout-letter">A.</span> Diamond chain stitch placket with contrast thread</p>
+        <p className="callout-item"><span className="callout-letter">B.</span> Vertebrae spine detail, hand-stitched, center back</p>
+        <p className="callout-item"><span className="callout-letter">C.</span> Wheat symbol at yoke — mark of Famine</p>
+        <p className="callout-item"><span className="callout-letter">D.</span> Western saddle-pattern contrast stitching</p>
+        <p className="callout-item"><span className="callout-letter">E.</span> Black suede collar, folded point</p>
+      </div>
+
+      {/* Sizing */}
+      <div className="details-sizing">
+        <span className="details-sizing-label">SIZING</span>
+        <span>Sized true to chest measurement</span>
+        <div className="details-size-grid">
+          <span>S — 36"</span>
+          <span>M — 40"</span>
+          <span>L — 44"</span>
+          <span>XL — 48"</span>
+        </div>
       </div>
     </div>
   </div>
