@@ -54,28 +54,29 @@ const InsideCover = forwardRef((props, ref) => (
 const ProductPage = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="product-page">
-      {/* Title block - catalog style */}
-      <div className="product-header">
+      {/* Text layer - sits behind */}
+      <div className="product-text-layer">
         <span className="product-name">THE HIGHWAYMAN</span>
         <span className="product-price">$299</span>
+        <p className="product-verse">"What you carry will be weighed."</p>
+        <p className="product-specs">
+          Black Cavalry Twill · Western Yoke · Contrast Stitching
+        </p>
       </div>
       
-      {/* The illustration - floats free, no border */}
-      <div className="illustration-area">
+      {/* Image layer - cowboy + jacket side by side, overlays text */}
+      <div className="product-image-layer">
         <img 
           src="/IMG_1147.jpeg" 
           alt="The Highwayman"
-          className="product-illustration"
+          className="product-cowboy"
+        />
+        <img 
+          src="/IMG_0851.jpeg" 
+          alt="The Highwayman Jacket"
+          className="product-jacket"
         />
       </div>
-      
-      {/* Tagline */}
-      <p className="product-verse">"What you carry will be weighed."</p>
-      
-      {/* Specs */}
-      <p className="product-specs">
-        Black Cavalry Twill · Western Yoke · Contrast Stitching
-      </p>
     </div>
   </div>
 ))
