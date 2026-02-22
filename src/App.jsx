@@ -54,29 +54,26 @@ const InsideCover = forwardRef((props, ref) => (
 const ProductPage = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="product-page">
-      {/* Text layer - sits behind */}
-      <div className="product-text-layer">
+      {/* Header */}
+      <div className="product-header">
         <span className="product-name">THE HIGHWAYMAN</span>
         <span className="product-price">$299</span>
-        <p className="product-verse">"What you carry will be weighed."</p>
-        <p className="product-specs">
-          Black Cavalry Twill · Western Yoke · Contrast Stitching
-        </p>
       </div>
       
-      {/* Image layer - cowboy + jacket side by side, overlays text */}
-      <div className="product-image-layer">
+      {/* Illustration */}
+      <div className="product-illustration-wrap">
         <img 
           src="/IMG_1147.jpeg" 
           alt="The Highwayman"
-          className="product-cowboy"
-        />
-        <img 
-          src="/IMG_0851.jpeg" 
-          alt="The Highwayman Jacket"
-          className="product-jacket"
+          className="product-illustration"
         />
       </div>
+      
+      {/* Footer */}
+      <p className="product-verse">"What you carry will be weighed."</p>
+      <p className="product-specs">
+        Black Cavalry Twill · Western Yoke · Contrast Stitching
+      </p>
     </div>
   </div>
 ))
@@ -88,34 +85,21 @@ const ProductPage = forwardRef((props, ref) => (
 const DetailsPage = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="details-page">
-      <h2 className="details-title">CONSTRUCTION DETAILS</h2>
+      <h2 className="details-title">CONSTRUCTION</h2>
       
-      <div className="photo-grid">
-        <figure className="photo-figure">
-          <img src="/IMG_0851.jpeg" alt="Front" />
-          <figcaption>Front View</figcaption>
-        </figure>
-        
-        <figure className="photo-figure">
-          <img src="/IMG_0852.jpeg" alt="Back" />
-          <figcaption>Vertebrae Stitching</figcaption>
-        </figure>
-        
-        <figure className="photo-figure zoom-placket">
-          <img src="/IMG_0851.jpeg" alt="Detail" />
-          <figcaption>Diamond Chain</figcaption>
-        </figure>
-        
-        <figure className="photo-figure zoom-yoke">
-          <img src="/IMG_0852.jpeg" alt="Detail" />
-          <figcaption>Wheat Symbol</figcaption>
-        </figure>
+      <div className="spec-block">
+        <p className="spec-item"><span>SHELL</span> 100% Cotton Cavalry Twill</p>
+        <p className="spec-item"><span>COLOR</span> Black (PANTONE 19-4006 TCX)</p>
+        <p className="spec-item"><span>COLLAR</span> Black Suede</p>
+        <p className="spec-item"><span>STITCH</span> Contrast Thread, Saddle Pattern</p>
+        <p className="spec-item"><span>BACK</span> Vertebrae Spine Detail</p>
+        <p className="spec-item"><span>YOKE</span> Wheat Symbol (Famine)</p>
+        <p className="spec-item"><span>PLACKET</span> Diamond Chain Stitch</p>
       </div>
       
-      <div className="materials">
-        <p>SHELL: 100% Cotton Cavalry Twill</p>
-        <p>COLLAR: Black Suede</p>
-        <p>STITCHING: Contrast Thread, Western Saddle Pattern</p>
+      <div className="sizing-note">
+        <p>Sized true to chest measurement.</p>
+        <p>S (36") · M (40") · L (44") · XL (48")</p>
       </div>
     </div>
   </div>
