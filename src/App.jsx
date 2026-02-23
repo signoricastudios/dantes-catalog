@@ -73,41 +73,37 @@ const ProductPage = forwardRef((props, ref) => (
 
       <hr className="catalog-rule" />
 
-      {/* Main content — illustration left, text right */}
+      {/* Main content — float-based text wrap */}
       <div className="product-content">
-        <div className="product-illustration-col">
-          <img
-            src="/IMG_1147.jpeg"
-            alt="The Highwayman"
-            className="product-illustration"
-          />
+        <img
+          src="/IMG_1147_clean.png"
+          alt="The Highwayman"
+          className="product-illustration"
+        />
+        <p className="product-copy">
+          A jacket of superior construction, designed for those
+          who ride between worlds. Cut from the finest black
+          Cavalry Twill with contrast stitching in the Western
+          Saddle Pattern throughout.
+        </p>
+        <p className="product-copy">
+          The back panel features our signature vertebrae
+          detail — hand-stitched in contrast thread to resemble
+          a spine made visible. Black suede collar. Diamond
+          chain stitch placket. Wheat symbol at the yoke — mark
+          of the Famine rider.
+        </p>
+        <div className="product-spec-divider">———</div>
+        <div className="product-spec-list">
+          <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
+          <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
+          <p><span>COLLAR</span> Black Suede</p>
+          <p><span>STITCH</span> Contrast, Saddle Pattern</p>
+          <p><span>BACK</span> Vertebrae Spine Detail</p>
+          <p><span>YOKE</span> Wheat Symbol — Famine</p>
+          <p><span>PLACKET</span> Diamond Chain Stitch</p>
         </div>
-        <div className="product-text-col">
-          <p className="product-copy">
-            A jacket of superior construction, designed for those
-            who ride between worlds. Cut from the finest black
-            Cavalry Twill with contrast stitching in the Western
-            Saddle Pattern throughout.
-          </p>
-          <p className="product-copy">
-            The back panel features our signature vertebrae
-            detail — hand-stitched in contrast thread to resemble
-            a spine made visible. Black suede collar. Diamond
-            chain stitch placket. Wheat symbol at the yoke — mark
-            of the Famine rider.
-          </p>
-          <div className="product-spec-divider">———</div>
-          <div className="product-spec-list">
-            <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
-            <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
-            <p><span>COLLAR</span> Black Suede</p>
-            <p><span>STITCH</span> Contrast, Saddle Pattern</p>
-            <p><span>BACK</span> Vertebrae Spine Detail</p>
-            <p><span>YOKE</span> Wheat Symbol — Famine</p>
-            <p><span>PLACKET</span> Diamond Chain Stitch</p>
-          </div>
-          <p className="product-sizing">S (36") · M (40") · L (44") · XL (48")</p>
-        </div>
+        <p className="product-sizing">S (36") · M (40") · L (44") · XL (48")</p>
       </div>
 
       {/* Bottom verse */}
