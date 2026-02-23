@@ -199,7 +199,18 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px;
+  padding: 40px 32px;
+  position: relative;
+}
+
+/* Decorative inner frame border for inside cover */
+.inside-cover::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid var(--ink-ghost);
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .epigraph {
@@ -216,6 +227,13 @@ html, body {
   color: var(--ink-light);
   line-height: 1.8;
   letter-spacing: 0.03em;
+}
+
+.inside-cover-ornament {
+  font-size: 0.8rem;
+  color: var(--ink-ghost);
+  margin: 16px 0;
+  opacity: 0.5;
 }
 
 /* ==========================================================================
@@ -404,8 +422,25 @@ html, body {
   font-style: italic;
   font-size: 0.6rem;
   color: var(--ink-medium);
-  text-align: center;
   margin-top: 4px;
+}
+
+.product-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-seal {
+  flex-shrink: 0;
+}
+
+.product-seal-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: 0.25;
+  filter: sepia(20%);
 }
 
 /* ==========================================================================

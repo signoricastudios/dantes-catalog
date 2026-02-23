@@ -39,6 +39,7 @@ const InsideCover = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
     <div className="inside-cover">
       <p className="epigraph">For those who ride between worlds.</p>
+      <div className="inside-cover-ornament">&#10045;</div>
       <p className="colophon">
         Est. in the year of our Lord, 2026<br/>
         San Francisco, California
@@ -109,7 +110,12 @@ const ProductPage = forwardRef((props, ref) => (
       {/* Bottom verse */}
       <div className="product-footer">
         <hr className="catalog-rule" />
-        <p className="product-verse">"What you carry will be weighed."</p>
+        <div className="product-footer-row">
+          <p className="product-verse">"What you carry will be weighed."</p>
+          <div className="product-seal">
+            <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" className="product-seal-img" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
