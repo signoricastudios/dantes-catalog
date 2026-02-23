@@ -252,11 +252,11 @@ html, body {
   letter-spacing: 0.1em;
 }
 
-/* Title + Price bar */
+/* Title + Price bar (stacked vertically) */
 .product-title-bar {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 2px;
 }
 
@@ -264,30 +264,33 @@ html, body {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: clamp(2.2rem, 6vw, 3.2rem);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   color: var(--ink);
   text-transform: uppercase;
   line-height: 1;
+  margin: 0;
 }
 
-.product-price-group {
+.product-price {
   display: flex;
   align-items: flex-start;
+  align-self: flex-start;
   line-height: 1;
+  margin-top: 2px;
 }
 
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--ink);
-  margin-top: 0.15em;
+  margin-top: 0.12em;
 }
 
 .product-price-amount {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: clamp(2.0rem, 5.5vw, 3.0rem);
+  font-size: clamp(2.4rem, 7vw, 3.8rem);
   color: var(--ink);
   letter-spacing: 0.02em;
 }
@@ -319,6 +322,8 @@ html, body {
 .product-illustration {
   float: left;
   width: 45%;
+  min-height: 300px;
+  max-height: none;
   margin-right: 14px;
   margin-bottom: 8px;
   object-fit: contain;

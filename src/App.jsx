@@ -60,16 +60,15 @@ const ProductPage = forwardRef((props, ref) => (
         <span className="product-collection">FAMINE COLLECTION · VOL. I</span>
       </div>
 
-      {/* Title + Price bar */}
+      {/* Title → Tagline → Price (stacked vertically) */}
       <div className="product-title-bar">
         <h2 className="product-name">THE HIGHWAYMAN</h2>
-        <div className="product-price-group">
+        <div className="product-tagline">A Cavalry Jacket for the Discerning Rider</div>
+        <div className="product-price">
           <span className="product-price-dollar">$</span>
           <span className="product-price-amount">299</span>
         </div>
       </div>
-
-      <div className="product-tagline">A Cavalry Jacket for the Discerning Rider</div>
 
       <hr className="catalog-rule" />
 
