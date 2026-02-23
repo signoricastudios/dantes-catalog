@@ -92,7 +92,8 @@ const ProductPage = forwardRef((props, ref) => (
           chain stitch placket. Wheat symbol at the yoke — mark
           of the Famine rider.
         </p>
-        <div className="product-spec-divider">———</div>
+        <div className="product-ornament">&middot; &middot; &middot;</div>
+        <hr className="product-spec-divider" />
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
           <p><span>COLOR</span> Black (PANTONE 19-4006)</p>

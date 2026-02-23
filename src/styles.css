@@ -336,7 +336,7 @@ html, body {
 
 .product-copy {
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.52rem;
+  font-size: 0.55rem;
   color: var(--ink-medium);
   line-height: 1.35;
   margin-bottom: 0.3em;
@@ -345,12 +345,24 @@ html, body {
 }
 
 .product-spec-divider {
-  font-family: 'Courier Prime', monospace;
-  font-size: 0.5rem;
-  color: var(--ink-ghost);
+  border: none;
+  border-top: 1px solid var(--ink-ghost);
+  margin: 6px 0 4px;
+  opacity: 0.5;
+}
+
+.product-ornament {
   text-align: center;
-  margin: 4px 0;
-  letter-spacing: 0.3em;
+  font-size: 0.4rem;
+  color: var(--ink-ghost);
+  letter-spacing: 0.5em;
+  margin: 4px 0 2px;
+}
+
+.product-spec-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
 }
 
 .product-spec-list p {
@@ -376,8 +388,9 @@ html, body {
   font-family: 'Courier Prime', monospace;
   font-size: 0.45rem;
   color: var(--ink-light);
-  margin-top: 6px;
+  margin-top: 4px;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* Bottom verse */
