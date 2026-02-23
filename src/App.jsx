@@ -44,6 +44,7 @@ const InsideCover = forwardRef((props, ref) => (
         Est. in the year of our Lord, 2026<br/>
         San Francisco, California
       </p>
+      <span className="page-number">i</span>
     </div>
   </div>
 ))
@@ -117,6 +118,7 @@ const ProductPage = forwardRef((props, ref) => (
           </div>
         </div>
       </div>
+      <span className="page-number">1</span>
     </div>
   </div>
 ))
@@ -169,6 +171,7 @@ const DetailsPage = forwardRef((props, ref) => (
           <span>XL — 48"</span>
         </div>
       </div>
+      <span className="page-number">2</span>
     </div>
   </div>
 ))
@@ -286,7 +289,10 @@ const OrderFormPage1 = forwardRef(({ formData, setFormData }, ref) => {
           </div>
         </div>
         
-        <p className="page-turn-hint">TURN OVER →</p>
+        <div className="order-page-bottom">
+          <span className="page-number">3</span>
+          <p className="page-turn-hint">TURN OVER →</p>
+        </div>
       </div>
     </div>
   )
@@ -371,6 +377,7 @@ const OrderFormPage2 = forwardRef(({ formData, setFormData, onOrder }, ref) => {
         <div className="seal-placeholder">
           <span>OFFICIAL USE ONLY</span>
         </div>
+        <span className="page-number">4</span>
       </div>
     </div>
   )
