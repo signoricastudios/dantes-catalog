@@ -24,32 +24,28 @@
         background: #1a1612;
       }
       
-      /* Lock to landscape on mobile */
+      /* Landscape hint banner on portrait mobile (non-blocking) */
       @media screen and (orientation: portrait) and (max-width: 1024px) {
         #root::before {
-          content: '';
+          content: 'Best viewed in landscape';
           position: fixed;
-          inset: 0;
-          background: #1a1612;
-          z-index: 99999;
-        }
-        #root::after {
-          content: 'ROTATE DEVICE';
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          top: 0;
+          left: 0;
+          right: 0;
+          padding: 6px 0;
+          background: rgba(26, 22, 18, 0.9);
           color: #8b7355;
           font-family: 'Cinzel', serif;
-          font-size: 14px;
-          letter-spacing: 0.3em;
-          z-index: 100000;
+          font-size: 11px;
+          letter-spacing: 0.2em;
           text-align: center;
+          z-index: 99999;
+          pointer-events: none;
         }
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-Ieb_7fsg.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-B976gWnX.css">
+    <script type="module" crossorigin src="/assets/index-BB0Xln4X.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIDtT7Gx.css">
   </head>
   <body>
     <div id="root"></div>

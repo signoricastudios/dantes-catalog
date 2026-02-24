@@ -302,78 +302,33 @@ const OrderFormPage1 = forwardRef(({ formData, setFormData }, ref) => {
 // ORDER FORM - Page 2 (Payment)
 // =============================================================================
 
-const OrderFormPage2 = forwardRef(({ formData, setFormData, onOrder }, ref) => {
-  const handleChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }))
-  }
-  
-  const isComplete = formData.size && formData.lastName && formData.firstName && 
-    formData.street && formData.city && formData.state && formData.zip &&
-    formData.cardNumber && formData.expDate && formData.cvv
-  
+const OrderFormPage2 = forwardRef((props, ref) => {
   return (
     <div className="page paper" ref={ref}>
       <div className="order-page">
-        <h2 className="order-title">PAYMENT</h2>
-        
-        {/* Card Number */}
-        <div className="form-row">
-          <label className="form-label">CARD NUMBER</label>
-          <input 
-            type="text"
-            className="form-input"
-            value={formData.cardNumber}
-            onChange={(e) => {
-              const v = e.target.value.replace(/\D/g, '').slice(0, 16)
-              const formatted = v.replace(/(\d{4})(?=\d)/g, '$1 ')
-              handleChange('cardNumber', formatted)
-            }}
-            placeholder="•••• •••• •••• ••••"
-          />
-        </div>
-        
-        {/* Exp / CVV */}
-        <div className="form-row split">
-          <div>
-            <label className="form-label">EXPIRES</label>
-            <input 
-              type="text"
-              className="form-input"
-              value={formData.expDate}
-              onChange={(e) => {
-                let v = e.target.value.replace(/\D/g, '').slice(0, 4)
-                if (v.length > 2) v = v.slice(0, 2) + '/' + v.slice(2)
-                handleChange('expDate', v)
-              }}
-              placeholder="MM/YY"
-            />
+        <h2 className="order-title">HOW TO ORDER</h2>
+
+        <div className="how-to-order">
+          <p className="order-intro">To place your order, contact us:</p>
+
+          <div className="contact-method">
+            <span className="contact-label">EMAIL</span>
+            <span className="contact-value">orders@dantesoutlaw.com</span>
           </div>
-          <div>
-            <label className="form-label">SECURITY CODE</label>
-            <input 
-              type="text"
-              className="form-input"
-              value={formData.cvv}
-              onChange={(e) => handleChange('cvv', e.target.value.replace(/\D/g, '').slice(0, 4))}
-              placeholder="•••"
-            />
+
+          <div className="contact-method">
+            <span className="contact-label">INSTAGRAM</span>
+            <span className="contact-value">@dantesoutlaw</span>
+          </div>
+
+          <div className="contact-method">
+            <span className="contact-label">ONLINE</span>
+            <a className="contact-value contact-link" href="#" onClick={(e) => e.preventDefault()}>
+              Visit our online store
+            </a>
           </div>
         </div>
-        
-        {/* Attestation */}
-        <div className="attestation">
-          <p>By placing this order, I accept the weight<br/>of this garment and all it carries.</p>
-        </div>
-        
-        {/* Submit */}
-        <button 
-          className={`order-btn ${isComplete ? '' : 'disabled'}`}
-          onClick={isComplete ? onOrder : undefined}
-        >
-          PLACE ORDER
-        </button>
-        
-        {/* Seal placeholder for physical orders */}
+
         <div className="seal-placeholder">
           <span>OFFICIAL USE ONLY</span>
         </div>
@@ -414,9 +369,6 @@ function App() {
     city: '',
     state: '',
     zip: '',
-    cardNumber: '',
-    expDate: '',
-    cvv: ''
   })
   
   // Responsive sizing
@@ -437,9 +389,8 @@ function App() {
   }, [])
   
   const handleOrder = useCallback(() => {
-    console.log('Order:', formData)
     setShowConfirmation(true)
-  }, [formData])
+  }, [])
   
   const onFlip = useCallback((e) => setCurrentPage(e.data), [])
   
@@ -473,7 +424,7 @@ function App() {
         <ProductPage />
         <DetailsPage />
         <OrderFormPage1 formData={formData} setFormData={setFormData} />
-        <OrderFormPage2 formData={formData} setFormData={setFormData} onOrder={handleOrder} />
+        <OrderFormPage2 />
         <BackCover />
       </HTMLFlipBook>
       

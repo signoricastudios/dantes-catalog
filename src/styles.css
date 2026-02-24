@@ -776,6 +776,50 @@ html, body {
   color: var(--ink-light);
 }
 
+/* How to Order (contact page) */
+.how-to-order {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-intro {
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  color: var(--ink);
+  margin: 0 0 8px 0;
+}
+
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-label {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--ink-light);
+  text-transform: uppercase;
+}
+
+.contact-value {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.contact-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  color: var(--ink-light);
+}
+
 /* ==========================================================================
    CONFIRMATION
    ========================================================================== */
