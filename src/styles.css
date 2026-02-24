@@ -321,6 +321,7 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 2px;
+  animation: page-element-enter 0.4s ease-out 0.2s both;
 }
 
 .product-name {
@@ -366,6 +367,7 @@ html, body {
   font-size: 0.65rem;
   color: var(--ink-light);
   margin-bottom: 6px;
+  animation: page-element-enter 0.4s ease-out 0.6s both;
 }
 
 /* Decorative rule */
@@ -405,6 +407,7 @@ html, body {
   margin-bottom: 0.3em;
   text-align: justify;
   hyphens: auto;
+  animation: page-element-enter 0.4s ease-out 0.6s both;
 }
 
 .product-spec-divider {
@@ -426,6 +429,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
+  animation: page-element-enter 0.4s ease-out 0.8s both;
 }
 
 .product-spec-list p {
@@ -522,6 +526,7 @@ html, body {
   letter-spacing: 0.2em;
   color: var(--ink);
   margin-bottom: 2px;
+  animation: page-element-enter 0.4s ease-out 0.2s both;
 }
 
 .details-subtitle {
@@ -568,6 +573,7 @@ html, body {
 .details-callouts {
   margin: 6px 0;
   flex: 1;
+  animation: page-element-enter 0.4s ease-out 0.8s both;
 }
 
 .callout-item {
@@ -897,4 +903,26 @@ html, body {
 
 .catalog-wrapper {
   animation: fadeIn 0.8s ease-out;
+}
+
+/* Page element entrance animation */
+@keyframes page-element-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.product-page {
+  animation: page-element-enter 0.4s ease-out both;
+}
+
+.details-page {
+  animation: page-element-enter 0.4s ease-out both;
+}
+
+.inside-cover {
+  animation: page-element-enter 0.4s ease-out both;
+}
+
+.order-page {
+  animation: page-element-enter 0.4s ease-out both;
 }
