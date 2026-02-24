@@ -424,8 +424,8 @@ function App() {
     const resize = () => {
       const vh = window.innerHeight
       const vw = window.innerWidth
-      const maxH = vh * 0.88
-      const maxW = vw * 0.42
+      const maxH = vh * 0.92
+      const maxW = vw * 0.50
       let h = maxH
       let w = h * 0.72
       if (w > maxW) { w = maxW; h = w / 0.72 }
@@ -451,9 +451,9 @@ function App() {
         height={dimensions.height}
         size="fixed"
         minWidth={280}
-        maxWidth={600}
+        maxWidth={750}
         minHeight={380}
-        maxHeight={800}
+        maxHeight={1000}
         showCover={true}
         mobileScrollSupport={false}
         onFlip={onFlip}
