@@ -84,8 +84,29 @@ const ProductPage = forwardRef((props, ref) => (
           chain stitch placket. Wheat symbol at the yoke — mark
           of the Famine rider.
         </p>
-        <div className="product-ornament">&middot; &middot; &middot;</div>
-        <hr className="product-spec-divider" />
+        <p className="product-copy">
+          Every seam is double-felled for durability on the
+          trail. The saddle-pattern stitching, rendered in
+          bone-white thread, runs continuous from shoulder
+          to cuff — a hallmark of authentic Western craft
+          dating to the earliest cavalry workshops of the
+          Arizona Territory.
+        </p>
+        <p className="product-copy">
+          Offered in four measured sizes, each cut to permit
+          a full range of motion in the saddle. The collar
+          folds to a sharp point; the placket runs straight
+          and true. This is not a garment of fashion — it is
+          a garment of purpose, built for those who ride hard
+          and answer to no man.
+        </p>
+        <p className="product-copy">
+          Pair with the Dante's riding boot and broadcloth
+          trouser for the complete outfit. Each jacket ships
+          in a waxed canvas sleeve, sealed with the Dante's
+          mark. Inquire within for custom sizing or
+          monogramming at additional charge.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
           <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
@@ -95,7 +116,6 @@ const ProductPage = forwardRef((props, ref) => (
           <p><span>YOKE</span> Wheat Symbol — Famine</p>
           <p><span>PLACKET</span> Diamond Chain Stitch</p>
         </div>
-        <p className="product-sizing">S (36") · M (40") · L (44") · XL (48")</p>
       </div>
 
       {/* Bottom verse */}
@@ -194,7 +214,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
       {/* Main content — float-based text wrap */}
       <div className="product-content">
         <img
-          src="/cowboy.svg"
+          src="/cowboy.png"
           alt="The Desperado"
           className="product-illustration"
         />
@@ -211,8 +231,29 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           pocket, left breast. Blackened brass snap closures
           from throat to hem.
         </p>
-        <div className="product-ornament">&middot; &middot; &middot;</div>
-        <hr className="product-spec-divider" />
+        <p className="product-copy">
+          The canvas is waxed by hand in our San Francisco
+          workshop — each coat brushed in three layers until
+          the surface holds a muted sheen that repels water
+          and wind alike. In time, the finish wears to reveal
+          the raw cotton beneath, telling the story of every
+          mile traveled.
+        </p>
+        <p className="product-copy">
+          Thirteen blackened brass snaps run throat to hem,
+          each one forged and tumbled to resist corrosion in
+          salt air and desert dust. The storm cape doubles as
+          a rain shield; the walking vent permits a clean mount.
+          A coat for men who do not come back the same way
+          they left.
+        </p>
+        <p className="product-copy">
+          Sized generously to fit over a jacket or vest. The
+          duster pairs with any garment in the Famine collection.
+          Ships folded in a canvas field bag. Allow four to six
+          weeks for delivery by overland post. Custom lengths
+          available upon request; inquire by mail.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> Waxed Cotton Canvas (10oz)</p>
           <p><span>COLOR</span> Burnt Umber (PANTONE 19-1217)</p>
@@ -222,7 +263,6 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <p><span>CLOSURE</span> Blackened Brass Snaps</p>
           <p><span>LENGTH</span> Below Knee, Full Duster</p>
         </div>
-        <p className="product-sizing">S (38") · M (42") · L (46") · XL (50")</p>
       </div>
 
       {/* Bottom verse */}
