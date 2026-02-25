@@ -114,6 +114,21 @@ const ProductPage = forwardRef((props, ref) => (
           guaranteed or return within thirty days for full
           credit toward any item in the catalogue.
         </p>
+        <p className="product-copy">
+          Sizes correspond to chest measurement in inches.
+          Allow one inch of ease for layering. The collar
+          stands one and three-quarter inches; the body length
+          measures twenty-six inches at center back for size
+          Medium. Sleeve length is adjusted to quarter-inch
+          precision at the factory.
+        </p>
+        <p className="product-copy">
+          Care: brush clean with horsehair. Do not launder.
+          Spot treat with damp cloth. Store flat or hang on
+          broad wooden hanger. Re-wax collar and cuffs as
+          needed with Dante's Saddle Compound, sold
+          separately (see page 7).
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
           <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
@@ -141,16 +156,6 @@ const ProductPage = forwardRef((props, ref) => (
         </div>
       </div>
 
-      {/* Bottom verse */}
-      <div className="product-footer">
-        <hr className="catalog-rule" />
-        <div className="product-footer-row">
-          <p className="product-verse">"What you carry will be weighed."</p>
-          <div className="product-seal">
-            <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" className="product-seal-img" />
-          </div>
-        </div>
-      </div>
       <span className="page-number">1</span>
     </div>
   </div>
@@ -284,6 +289,20 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           through the Dante's catalogue. Returns accepted
           within thirty days; include original field bag.
         </p>
+        <p className="product-copy">
+          Measurements for size Medium: body length
+          forty-four inches, chest fifty inches, sleeve
+          thirty-four inches from shoulder. The storm cape
+          extends twelve inches from collar in all directions.
+          Walking vent runs eighteen inches from hem.
+        </p>
+        <p className="product-copy">
+          Care: re-wax annually with Dante's Canvas
+          Compound. Brush dry mud with stiff bristle. Hang
+          to dry after rain — do not fold wet. The wax will
+          soften and redistribute with body heat. Repairs
+          available by post; include return postage.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> Waxed Cotton Canvas (10oz)</p>
           <p><span>COLOR</span> Burnt Umber (PANTONE 19-1217)</p>
@@ -311,16 +330,6 @@ const ProductPageDesperado = forwardRef((props, ref) => (
         </div>
       </div>
 
-      {/* Bottom verse */}
-      <div className="product-footer">
-        <hr className="catalog-rule" />
-        <div className="product-footer-row">
-          <p className="product-verse">"He who walks in dust shall vanish into it."</p>
-          <div className="product-seal">
-            <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" className="product-seal-img" />
-          </div>
-        </div>
-      </div>
       <span className="page-number">3</span>
     </div>
   </div>
