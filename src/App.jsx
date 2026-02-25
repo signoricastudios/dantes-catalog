@@ -107,6 +107,13 @@ const ProductPage = forwardRef((props, ref) => (
           mark. Inquire within for custom sizing or
           monogramming at additional charge.
         </p>
+        <p className="product-copy">
+          Available only through authorized Dante's agents
+          or by direct correspondence. Each piece is numbered
+          and registered in the Famine ledger. Satisfaction
+          guaranteed or return within thirty days for full
+          credit toward any item in the catalogue.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
           <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
@@ -115,6 +122,22 @@ const ProductPage = forwardRef((props, ref) => (
           <p><span>BACK</span> Vertebrae Spine Detail</p>
           <p><span>YOKE</span> Wheat Symbol — Famine</p>
           <p><span>PLACKET</span> Diamond Chain Stitch</p>
+        </div>
+      </div>
+
+      {/* Accessory illustrations */}
+      <div className="product-accessories">
+        <div className="product-accessory">
+          <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" />
+          <span>DANTE'S SEAL</span>
+        </div>
+        <div className="product-accessory">
+          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '50px', opacity: 0.4}} />
+          <span>DETAIL VIEW</span>
+        </div>
+        <div className="product-accessory">
+          <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" />
+          <span>AUTHENTICITY</span>
         </div>
       </div>
 
@@ -254,6 +277,13 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           weeks for delivery by overland post. Custom lengths
           available upon request; inquire by mail.
         </p>
+        <p className="product-copy">
+          No two dusters wear alike. The wax takes on the
+          character of its owner — each crease and fade a
+          record of the roads traveled. Sold exclusively
+          through the Dante's catalogue. Returns accepted
+          within thirty days; include original field bag.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> Waxed Cotton Canvas (10oz)</p>
           <p><span>COLOR</span> Burnt Umber (PANTONE 19-1217)</p>
@@ -262,6 +292,22 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <p><span>VENT</span> Center Back Walking Vent</p>
           <p><span>CLOSURE</span> Blackened Brass Snaps</p>
           <p><span>LENGTH</span> Below Knee, Full Duster</p>
+        </div>
+      </div>
+
+      {/* Accessory illustrations */}
+      <div className="product-accessories">
+        <div className="product-accessory">
+          <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" />
+          <span>DANTE'S SEAL</span>
+        </div>
+        <div className="product-accessory">
+          <img src="/cowboy.png" alt="" style={{maxHeight: '50px', opacity: 0.4}} />
+          <span>DETAIL VIEW</span>
+        </div>
+        <div className="product-accessory">
+          <img src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png" alt="" />
+          <span>AUTHENTICITY</span>
         </div>
       </div>
 
