@@ -290,7 +290,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2px 6px 1px;
+  padding: 1px 5px 0;
   container-type: inline-size;
 }
 
@@ -299,7 +299,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1px;
+  margin-bottom: 0;
 }
 
 .product-item-no {
@@ -368,7 +368,7 @@ html, body {
   font-style: italic;
   font-size: 0.6rem;
   color: var(--ink-light);
-  margin-bottom: 1px;
+  margin-bottom: 0;
   animation: page-element-enter 0.4s ease-out 0.6s both;
 }
 
@@ -376,7 +376,7 @@ html, body {
 .catalog-rule {
   border: none;
   border-top: 1px solid var(--ink-ghost);
-  margin: 0 0 1px;
+  margin: 0;
 }
 
 /* Main content — float-based text wrap */
@@ -394,21 +394,21 @@ html, body {
   float: left;
   width: 52%;
   height: 92%;
-  margin: 0 4px 0 -2px;
+  margin: 0 2px 0 -2px;
   object-fit: contain;
   object-position: left bottom;
   shape-image-threshold: 0.4;
-  shape-margin: 4px;
+  shape-margin: 2px;
   mix-blend-mode: multiply;
   filter: brightness(1.06) contrast(1.25) sepia(8%);
 }
 
 .product-copy {
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.52rem;
+  font-size: 0.48rem;
   color: var(--ink-medium);
-  line-height: 1.22;
-  margin-bottom: 0.1em;
+  line-height: 1.15;
+  margin-bottom: 0.05em;
   text-align: justify;
   hyphens: auto;
   animation: page-element-enter 0.4s ease-out 0.6s both;
@@ -417,14 +417,14 @@ html, body {
 .product-spec-divider {
   border: none;
   border-top: 1px solid var(--ink-ghost);
-  margin: 1px 0 1px;
+  margin: 0;
   opacity: 0.5;
 }
 
 .product-spec-list {
   columns: 2;
   column-gap: 2px;
-  margin-top: 1px;
+  margin-top: 0;
   animation: page-element-enter 0.4s ease-out 0.8s both;
 }
 
@@ -463,8 +463,8 @@ html, body {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 0;
-  opacity: 0.85;
+  margin-top: -2px;
+  opacity: 0.9;
 }
 
 .product-accessory {
@@ -474,11 +474,11 @@ html, body {
 
 .product-accessory img {
   width: 100%;
-  max-height: 75px;
+  max-height: 90px;
   object-fit: contain;
   mix-blend-mode: multiply;
   filter: grayscale(1) brightness(1.05) contrast(1.4) sepia(12%);
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .product-accessory span {
@@ -868,7 +868,7 @@ html, body {
   color: var(--ink-ghost);
   letter-spacing: 0.1em;
   margin-top: auto;
-  padding-top: 4px;
+  padding-top: 1px;
 }
 
 .order-page-bottom {

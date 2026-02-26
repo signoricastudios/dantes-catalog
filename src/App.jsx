@@ -71,10 +71,17 @@ const ProductPage = forwardRef((props, ref) => (
           alt="The Highwayman"
           className="product-illustration"
           style={{
-            shapeOutside: 'polygon(0% 0%, 32% 0%, 34% 1%, 42% 2%, 46% 3%, 48% 4%, 46% 5%, 42% 6%, 40% 7%, 38% 8%, 40% 9%, 42% 10%, 44% 11%, 46% 12%, 44% 14%, 42% 16%, 40% 18%, 42% 20%, 44% 22%, 46% 24%, 48% 26%, 50% 27%, 48% 28%, 44% 29%, 40% 30%, 38% 31%, 36% 32%, 34% 34%, 32% 36%, 30% 38%, 32% 40%, 34% 42%, 36% 43%, 38% 44%, 36% 45%, 34% 46%, 33% 48%, 34% 50%, 36% 52%, 40% 54%, 44% 56%, 46% 58%, 44% 60%, 40% 62%, 38% 64%, 36% 66%, 34% 68%, 32% 70%, 30% 72%, 28% 74%, 28% 76%, 30% 78%, 32% 80%, 34% 82%, 36% 84%, 34% 86%, 30% 88%, 28% 90%, 30% 92%, 34% 94%, 36% 96%, 30% 98%, 26% 100%, 0% 100%)',
-            shapeMargin: '4px'
+            shapeOutside: 'polygon(0% 0%, 28% 0%, 30% 1%, 38% 2%, 42% 3%, 44% 4%, 42% 5%, 38% 6%, 36% 7%, 34% 8%, 36% 9%, 38% 10%, 40% 11%, 42% 12%, 40% 14%, 38% 16%, 36% 18%, 38% 20%, 40% 22%, 42% 24%, 44% 26%, 46% 27%, 44% 28%, 40% 29%, 36% 30%, 34% 31%, 32% 32%, 30% 34%, 28% 36%, 26% 38%, 28% 40%, 30% 42%, 32% 43%, 34% 44%, 32% 45%, 30% 46%, 29% 48%, 30% 50%, 32% 52%, 36% 54%, 40% 56%, 42% 58%, 40% 60%, 36% 62%, 34% 64%, 32% 66%, 30% 68%, 28% 70%, 26% 72%, 24% 74%, 24% 76%, 26% 78%, 28% 80%, 30% 82%, 32% 84%, 30% 86%, 26% 88%, 24% 90%, 26% 92%, 30% 94%, 32% 96%, 26% 98%, 22% 100%, 0% 100%)',
+            shapeMargin: '2px'
           }}
         />
+        <p className="product-copy">
+          DANTE'S OUTLAW SUPPLY is proud to present the finest riding jacket
+          ever offered through this catalogue. Fashioned after patterns
+          secured from the cavalry workshops of Fort Huachuca, and improved
+          upon by our master cutter in San Francisco. We invite the
+          discerning rider to examine every detail herein described.
+        </p>
         <p className="product-copy">
           A jacket of superior construction, designed for those
           who ride between worlds. Cut from the finest black
@@ -199,6 +206,26 @@ const ProductPage = forwardRef((props, ref) => (
           charge — inquire by telegraph. Specify chest, sleeve,
           and shoulder measurements with every order.
         </p>
+        <p className="product-copy">
+          The thread count per inch exceeds forty-two in both warp
+          and weft — a density unmatched by any competitor in the
+          Western territories. Each jacket requires eleven yards of
+          thread for the saddle-pattern stitching alone. Our cutters
+          work by gas-lamp, tracing patterns that have not been
+          altered since the original cavalry specifications were
+          obtained in 1874. No machine touches the garment until
+          the final pressing.
+        </p>
+        <p className="product-copy">
+          Notation for dealers and outfitters: wholesale terms
+          available on orders of six or more. Catalogue pricing
+          is net; no further discount applies. Freight charges
+          assessed per the current express schedule. All claims
+          must be filed within ten days of receipt. Dante's
+          reserves the right to substitute materials of equal
+          or superior quality when stocks are depleted. Write
+          to our San Francisco office for current availability.
+        </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
           <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
@@ -217,7 +244,7 @@ const ProductPage = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '75px', opacity: 0.75}} />
+          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '90px', opacity: 0.85}} />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">
