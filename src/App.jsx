@@ -70,20 +70,28 @@ const ProductPage = forwardRef((props, ref) => (
           src="/IMG_1147_clean.png"
           alt="The Highwayman"
           className="product-illustration"
-          style={{shapeOutside: 'url(/IMG_1147_clean.png)'}}
+          style={{
+            shapeOutside: 'polygon(0% 0%, 32% 0%, 34% 1%, 42% 2%, 46% 3%, 48% 4%, 46% 5%, 42% 6%, 40% 7%, 38% 8%, 40% 9%, 42% 10%, 44% 11%, 46% 12%, 44% 14%, 42% 16%, 40% 18%, 42% 20%, 44% 22%, 46% 24%, 48% 26%, 50% 27%, 48% 28%, 44% 29%, 40% 30%, 38% 31%, 36% 32%, 34% 34%, 32% 36%, 30% 38%, 32% 40%, 34% 42%, 36% 43%, 38% 44%, 36% 45%, 34% 46%, 33% 48%, 34% 50%, 36% 52%, 40% 54%, 44% 56%, 46% 58%, 44% 60%, 40% 62%, 38% 64%, 36% 66%, 34% 68%, 32% 70%, 30% 72%, 28% 74%, 28% 76%, 30% 78%, 32% 80%, 34% 82%, 36% 84%, 34% 86%, 30% 88%, 28% 90%, 30% 92%, 34% 94%, 36% 96%, 30% 98%, 26% 100%, 0% 100%)',
+            shapeMargin: '4px'
+          }}
         />
         <p className="product-copy">
           A jacket of superior construction, designed for those
           who ride between worlds. Cut from the finest black
           Cavalry Twill with contrast stitching in the Western
-          Saddle Pattern throughout.
+          Saddle Pattern throughout. Every stitch placed by the
+          hand of a craftsman who learned his trade on the
+          frontier, where a poorly-sewn seam could mean the
+          difference between warmth and ruin.
         </p>
         <p className="product-copy">
           The back panel features our signature vertebrae
           detail — hand-stitched in contrast thread to resemble
           a spine made visible. Black suede collar. Diamond
           chain stitch placket. Wheat symbol at the yoke — mark
-          of the Famine rider.
+          of the Famine rider. These details are not ornament;
+          they are the language of the trail, read by those
+          who know what to look for.
         </p>
         <p className="product-copy">
           Every seam is double-felled for durability on the
@@ -91,7 +99,18 @@ const ProductPage = forwardRef((props, ref) => (
           bone-white thread, runs continuous from shoulder
           to cuff — a hallmark of authentic Western craft
           dating to the earliest cavalry workshops of the
-          Arizona Territory.
+          Arizona Territory. We import our thread from
+          the same New England mills that supplied the
+          Union cavalry, spun tight and waxed for weather.
+        </p>
+        <p className="product-copy">
+          The shell is one hundred percent cotton cavalry
+          twill, woven at fourteen ounces to the yard —
+          a cloth so dense it turns a light rain without
+          treatment. The suede collar is cut from a single
+          hide, matched for grain and color. We accept no
+          seconds; every panel is inspected under lamp
+          before cutting begins.
         </p>
         <p className="product-copy">
           Offered in four measured sizes, each cut to permit
@@ -99,21 +118,28 @@ const ProductPage = forwardRef((props, ref) => (
           folds to a sharp point; the placket runs straight
           and true. This is not a garment of fashion — it is
           a garment of purpose, built for those who ride hard
-          and answer to no man.
+          and answer to no man. The armscye is set forward
+          for mounted posture; the back yoke is widened
+          two inches over civilian patterns.
         </p>
         <p className="product-copy">
           Pair with the Dante's riding boot and broadcloth
           trouser for the complete outfit. Each jacket ships
           in a waxed canvas sleeve, sealed with the Dante's
           mark. Inquire within for custom sizing or
-          monogramming at additional charge.
+          monogramming at additional charge. Our workshop
+          maintains patterns for over two hundred chest
+          measurements, ensuring a fit that is both precise
+          and forgiving in the manner required by hard use.
         </p>
         <p className="product-copy">
           Available only through authorized Dante's agents
           or by direct correspondence. Each piece is numbered
           and registered in the Famine ledger. Satisfaction
           guaranteed or return within thirty days for full
-          credit toward any item in the catalogue.
+          credit toward any item in the catalogue. We have
+          outfitted riders from Tombstone to Deadwood, and
+          not one has returned a garment for want of quality.
         </p>
         <p className="product-copy">
           Sizes correspond to chest measurement in inches.
@@ -121,14 +147,57 @@ const ProductPage = forwardRef((props, ref) => (
           stands one and three-quarter inches; the body length
           measures twenty-six inches at center back for size
           Medium. Sleeve length is adjusted to quarter-inch
-          precision at the factory.
+          precision at the factory. Shoulder slope is drafted
+          to three standard grades; specify erect, regular,
+          or sloping when ordering by mail.
         </p>
         <p className="product-copy">
           Care: brush clean with horsehair. Do not launder.
           Spot treat with damp cloth. Store flat or hang on
           broad wooden hanger. Re-wax collar and cuffs as
           needed with Dante's Saddle Compound, sold
-          separately (see page 7).
+          separately (see page 7). With proper attention, this
+          jacket will outlast its owner and pass to the next
+          rider in the line — as all good garments should.
+        </p>
+        <p className="product-copy">
+          The Highwayman is crafted in our San Francisco workshop from patterns drafted by hand. No two cuts are identical. We maintain a record of every jacket's measurements in the Famine ledger — proof that each garment was made for its rider alone. Write for our full-line catalogue of boots, trousers, and accessories. Mention this volume for priority dispatch.
+        </p>
+        <p className="product-copy">
+          The buttons are forged from blackened brass, each
+          one cast in a mould taken from an original
+          cavalry issue of 1874. The lining is left raw — no
+          silk, no satin — so the cloth may breathe as its
+          maker intended. A man who trusts his coat trusts
+          his life to the thread that holds it.
+        </p>
+        <p className="product-copy">
+          We guarantee every Highwayman against defect in
+          material and workmanship for the natural life of
+          the garment. Should any seam fail, any button
+          loosen, any panel wear through before its time,
+          return the jacket to our workshop and we will
+          repair or replace it without charge or question.
+          This is the Dante's promise, kept since our founding.
+        </p>
+        <p className="product-copy">
+          Our workshop foreman inspects each finished jacket
+          under lamp before it leaves the cutting table. Every
+          seam is tested under load; every button is set twice.
+          The Highwayman has been worn by cattlemen, lawmen,
+          and riders of every stripe from the Pecos to the
+          Platte — and not one has been returned for failure
+          of construction. We keep a ledger of every jacket
+          sold, and we stand behind each entry.
+        </p>
+        <p className="product-copy">
+          Order by post or through any authorized Dante's
+          agent west of the Mississippi. Enclose payment in
+          full or arrange credit through our San Francisco
+          office. Allow six to eight weeks for delivery by
+          express coach. Rush orders honored at additional
+          charge — inquire by telegraph. Specify chest, sleeve,
+          and shoulder measurements with every order.
         </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
@@ -148,7 +217,7 @@ const ProductPage = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '50px', opacity: 0.4}} />
+          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '75px', opacity: 0.75}} />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">
@@ -246,20 +315,31 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           src="/cowboy.png"
           alt="The Desperado"
           className="product-illustration"
-          style={{shapeOutside: 'url(/cowboy.png)'}}
+          style={{
+            width: '58%',
+            height: '96%',
+            shapeOutside: 'polygon(0% 0%, 48% 0%, 50% 1%, 55% 2%, 58% 3%, 55% 4%, 50% 5%, 45% 6%, 42% 7%, 40% 8%, 38% 9%, 36% 10%, 38% 11%, 45% 12%, 55% 13%, 65% 14%, 72% 15%, 78% 16%, 80% 17%, 78% 18%, 72% 19%, 65% 20%, 58% 21%, 54% 22%, 52% 23%, 50% 24%, 48% 25%, 46% 26%, 48% 27%, 50% 28%, 52% 29%, 53% 30%, 54% 32%, 55% 34%, 54% 36%, 52% 38%, 54% 40%, 56% 42%, 55% 44%, 52% 46%, 50% 48%, 48% 50%, 46% 52%, 44% 54%, 43% 56%, 42% 58%, 44% 60%, 46% 62%, 44% 64%, 42% 66%, 40% 68%, 38% 70%, 40% 72%, 42% 74%, 44% 76%, 42% 78%, 40% 80%, 38% 82%, 40% 84%, 42% 86%, 40% 88%, 36% 90%, 34% 92%, 38% 94%, 42% 96%, 36% 98%, 30% 100%, 0% 100%)',
+            shapeMargin: '4px'
+          }}
         />
         <p className="product-copy">
           A riding coat of unusual length and purpose. Cut
           to fall below the knee, the Desperado shields its
           wearer from dust, rain, and the gaze of lawmen.
-          Waxed cotton canvas, ten-ounce weight, hand-finished.
+          Waxed cotton canvas, ten-ounce weight, hand-finished
+          in our San Francisco workshop. This is the duster
+          that made the frontier legend — worn by men who rode
+          long and answered to nothing but the horizon.
         </p>
         <p className="product-copy">
           Storm cape at the shoulders doubles as a rain
           shield. Deep walking vent at the rear allows a
           full stride — or a clean mount. Interior carry
           pocket, left breast. Blackened brass snap closures
-          from throat to hem.
+          from throat to hem. The cape is cut wide enough
+          to cover the arms in a downpour yet lies flat
+          against the back in dry weather, adding not an
+          ounce of unnecessary bulk.
         </p>
         <p className="product-copy">
           The canvas is waxed by hand in our San Francisco
@@ -267,7 +347,9 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           the surface holds a muted sheen that repels water
           and wind alike. In time, the finish wears to reveal
           the raw cotton beneath, telling the story of every
-          mile traveled.
+          mile traveled. We source our canvas from the same
+          Carolina mills that once supplied wagon covers to
+          the overland freight companies.
         </p>
         <p className="product-copy">
           Thirteen blackened brass snaps run throat to hem,
@@ -275,14 +357,26 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           salt air and desert dust. The storm cape doubles as
           a rain shield; the walking vent permits a clean mount.
           A coat for men who do not come back the same way
-          they left.
+          they left. Each snap is tested under a fifty-pound
+          pull before it leaves the forge.
+        </p>
+        <p className="product-copy">
+          The duster is cut from a single bolt of ten-ounce
+          waxed cotton canvas — no piecing, no patchwork. Every
+          panel is laid out by hand on our cutting table, chalk-
+          marked against patterns that have not changed since
+          our founding year. The seams are felled twice and
+          pressed flat with a hot iron so they lie smooth against
+          the body and shed water at every join.
         </p>
         <p className="product-copy">
           Sized generously to fit over a jacket or vest. The
           duster pairs with any garment in the Famine collection.
-          Ships folded in a canvas field bag. Allow four to six
-          weeks for delivery by overland post. Custom lengths
-          available upon request; inquire by mail.
+          Ships folded in a canvas field bag with the Dante's mark
+          branded into the flap. Allow four to six weeks for
+          delivery by overland post. Custom lengths available upon
+          request; inquire by mail. We carry patterns from
+          thirty-six to fifty-two inches at the chest.
         </p>
         <p className="product-copy">
           No two dusters wear alike. The wax takes on the
@@ -290,20 +384,54 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           record of the roads traveled. Sold exclusively
           through the Dante's catalogue. Returns accepted
           within thirty days; include original field bag.
+          We have seen coats return to our workshop after
+          twenty years of hard use, and the cloth still sound.
+        </p>
+        <p className="product-copy">
+          The interior is left unlined by design — no silk,
+          no flannel, nothing to trap moisture against the
+          body. The raw seams are sealed with beeswax to
+          prevent fraying. A single breast pocket, concealed
+          behind the left panel, is sized to hold papers,
+          currency, or a small-caliber sidearm. The pocket
+          mouth is reinforced with leather binding.
         </p>
         <p className="product-copy">
           Measurements for size Medium: body length
           forty-four inches, chest fifty inches, sleeve
           thirty-four inches from shoulder. The storm cape
           extends twelve inches from collar in all directions.
-          Walking vent runs eighteen inches from hem.
+          Walking vent runs eighteen inches from hem. Each
+          size is drafted independently — not merely graded
+          from a single pattern — to ensure correct proportion
+          at every measurement.
+        </p>
+        <p className="product-copy">
+          Our workshop foreman examines every finished duster
+          under lamp before it ships. The snaps are tested,
+          the seams inspected, the wax finish checked for
+          evenness. We keep a ledger entry for each coat —
+          date of completion, cutter's name, and the chest
+          measurement to which it was built. This is
+          the Dante's standard, and we do not waver from it.
+        </p>
+        <p className="product-copy">
+          We guarantee the Desperado against defect in
+          material and workmanship for the natural life of
+          the garment. Should any seam open, any snap fail,
+          any panel wear through before its time, return
+          the coat to our workshop and we shall repair it
+          without charge. This promise has held since our
+          founding, and no rider has yet found its limit.
         </p>
         <p className="product-copy">
           Care: re-wax annually with Dante's Canvas
           Compound. Brush dry mud with stiff bristle. Hang
           to dry after rain — do not fold wet. The wax will
           soften and redistribute with body heat. Repairs
-          available by post; include return postage.
+          available by post; include return postage. Order
+          through any authorized Dante's agent or by direct
+          correspondence to our San Francisco office.
         </p>
         <div className="product-spec-list">
           <p><span>SHELL</span> Waxed Cotton Canvas (10oz)</p>
@@ -323,7 +451,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/cowboy.png" alt="" style={{maxHeight: '50px', opacity: 0.4}} />
+          <img src="/cowboy.png" alt="" style={{maxHeight: '75px', opacity: 0.75}} />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">

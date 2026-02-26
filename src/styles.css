@@ -349,18 +349,18 @@ html, body {
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: clamp(1.8rem, 6cqw, 3rem);
+  font-size: clamp(2.2rem, 8cqw, 4rem);
   color: var(--ink);
-  margin-top: 0.12em;
+  margin-top: 0.1em;
 }
 
 .product-price-amount {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: clamp(3rem, 12cqw, 6rem);
+  font-size: clamp(3.5rem, 14cqw, 7rem);
   color: var(--ink);
   letter-spacing: -0.03em;
-  line-height: 0.85;
+  line-height: 0.82;
 }
 
 .product-tagline {
@@ -389,13 +389,14 @@ html, body {
   gap: 0;
 }
 
-/* Floated illustration — text wraps around, no border, blends into paper */
+/* Floated illustration — DOMINANT figure, text wraps organically around contour */
 .product-illustration {
   float: left;
-  width: 48%;
-  height: auto;
-  margin: 0 6px 2px 0;
+  width: 52%;
+  height: 92%;
+  margin: 0 4px 0 -2px;
   object-fit: contain;
+  object-position: left bottom;
   shape-image-threshold: 0.4;
   shape-margin: 4px;
   mix-blend-mode: multiply;
@@ -404,7 +405,7 @@ html, body {
 
 .product-copy {
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.54rem;
+  font-size: 0.52rem;
   color: var(--ink-medium);
   line-height: 1.22;
   margin-bottom: 0.1em;
@@ -422,13 +423,14 @@ html, body {
 
 .product-spec-list {
   columns: 2;
-  column-gap: 4px;
+  column-gap: 2px;
+  margin-top: 1px;
   animation: page-element-enter 0.4s ease-out 0.8s both;
 }
 
 .product-spec-list p {
   font-family: 'Courier Prime', monospace;
-  font-size: 0.52rem;
+  font-size: 0.48rem;
   color: var(--ink-medium);
   line-height: 1.25;
   border-bottom: 1px dotted rgba(0,0,0,0.08);
@@ -439,10 +441,10 @@ html, body {
 
 .product-spec-list p span {
   display: inline-block;
-  width: 48px;
+  width: 42px;
   font-weight: 700;
   color: var(--ink);
-  font-size: 0.52rem;
+  font-size: 0.48rem;
   letter-spacing: 0.03em;
 }
 
@@ -461,8 +463,8 @@ html, body {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 1px;
-  opacity: 0.45;
+  margin-top: 0;
+  opacity: 0.85;
 }
 
 .product-accessory {
@@ -472,11 +474,11 @@ html, body {
 
 .product-accessory img {
   width: 100%;
-  max-height: 50px;
+  max-height: 75px;
   object-fit: contain;
   mix-blend-mode: multiply;
-  filter: grayscale(1) brightness(1.1) contrast(1.3) sepia(15%);
-  opacity: 0.45;
+  filter: grayscale(1) brightness(1.05) contrast(1.4) sepia(12%);
+  opacity: 0.75;
 }
 
 .product-accessory span {
