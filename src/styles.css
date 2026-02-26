@@ -396,7 +396,8 @@ html, body {
   height: auto;
   margin: 0 6px 2px 0;
   object-fit: contain;
-  shape-outside: margin-box;
+  shape-image-threshold: 0.4;
+  shape-margin: 4px;
   mix-blend-mode: multiply;
   filter: brightness(1.06) contrast(1.25) sepia(8%);
 }
@@ -461,7 +462,7 @@ html, body {
   justify-content: center;
   gap: 12px;
   margin-top: 1px;
-  opacity: 0.35;
+  opacity: 0.45;
 }
 
 .product-accessory {

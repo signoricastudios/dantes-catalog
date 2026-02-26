@@ -70,6 +70,7 @@ const ProductPage = forwardRef((props, ref) => (
           src="/IMG_1147_clean.png"
           alt="The Highwayman"
           className="product-illustration"
+          style={{shapeOutside: 'url(/IMG_1147_clean.png)'}}
         />
         <p className="product-copy">
           A jacket of superior construction, designed for those
@@ -245,6 +246,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           src="/cowboy.png"
           alt="The Desperado"
           className="product-illustration"
+          style={{shapeOutside: 'url(/cowboy.png)'}}
         />
         <p className="product-copy">
           A riding coat of unusual length and purpose. Cut
