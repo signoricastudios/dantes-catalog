@@ -81,11 +81,18 @@ html, body {
 
 .page.paper {
   background: var(--paper);
-  /* Aged paper texture */
+  /* Aged paper texture — enhanced grain and aging */
   background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse at 30% 70%, rgba(200,180,140,0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 30%, rgba(180,160,120,0.08) 0%, transparent 40%),
+    /* Primary grain — higher opacity for visible paper texture */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E"),
+    /* Coarse grain layer — visible fiber texture */
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.35' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.04'/%3E%3C/svg%3E"),
+    /* Age spots / foxing — warm discoloration patches */
+    radial-gradient(ellipse at 25% 65%, rgba(180,155,110,0.15) 0%, transparent 45%),
+    radial-gradient(ellipse at 75% 25%, rgba(170,145,100,0.10) 0%, transparent 35%),
+    radial-gradient(ellipse at 55% 85%, rgba(160,140,100,0.08) 0%, transparent 30%),
+    /* Edge darkening — pages yellow more at edges */
+    radial-gradient(ellipse at center, transparent 40%, rgba(180,160,120,0.06) 100%),
     linear-gradient(to bottom, var(--paper) 0%, var(--paper-dark) 100%);
   /* Inset depth — page recessed in a bound book */
   box-shadow:
@@ -400,7 +407,8 @@ html, body {
   shape-image-threshold: 0.4;
   shape-margin: 1px;
   mix-blend-mode: multiply;
-  filter: brightness(1.06) contrast(1.25) sepia(8%);
+  filter: brightness(0.92) contrast(1.08) sepia(22%) saturate(0.85);
+  opacity: 0.88;
 }
 
 .product-copy {
@@ -499,8 +507,8 @@ html, body {
   width: 100%;
   max-height: 85px;
   object-fit: contain;
-  filter: invert(0.82) grayscale(1) brightness(1.05) contrast(1.3) sepia(18%);
-  opacity: 0.75;
+  filter: invert(0.82) grayscale(1) brightness(0.95) contrast(1.15) sepia(25%);
+  opacity: 0.72;
 }
 
 .product-accessory span {
