@@ -349,9 +349,9 @@ html, body {
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: clamp(2.2rem, 8cqw, 4rem);
+  font-size: clamp(1.5rem, 5.5cqw, 2.8rem);
   color: var(--ink);
-  margin-top: 0.1em;
+  margin-top: 0.15em;
 }
 
 .product-price-amount {
@@ -398,7 +398,7 @@ html, body {
   object-fit: contain;
   object-position: left bottom;
   shape-image-threshold: 0.4;
-  shape-margin: 2px;
+  shape-margin: 1px;
   mix-blend-mode: multiply;
   filter: brightness(1.06) contrast(1.25) sepia(8%);
 }
@@ -408,10 +408,15 @@ html, body {
   font-size: 0.48rem;
   color: var(--ink-medium);
   line-height: 1.15;
-  margin-bottom: 0.05em;
+  margin-bottom: 0;
   text-align: justify;
   hyphens: auto;
   animation: page-element-enter 0.4s ease-out 0.6s both;
+}
+
+.product-content .product-copy + .product-copy {
+  text-indent: 0.5em;
+  margin-top: 0;
 }
 
 .product-spec-divider {
