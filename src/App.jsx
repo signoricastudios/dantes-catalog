@@ -238,7 +238,7 @@ const ProductPage = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '70px', opacity: 0.85}} />
+          <img src="/IMG_1147_clean.png" alt="" />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">
@@ -493,7 +493,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/cowboy.png" alt="" style={{maxHeight: '60px', opacity: 0.75}} />
+          <img src="/cowboy.png" alt="" />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">

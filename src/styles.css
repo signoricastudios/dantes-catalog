@@ -488,7 +488,6 @@ html, body {
   gap: 8px;
   margin: 0;
   padding: 0;
-  opacity: 0.9;
 }
 
 .product-accessory {
@@ -498,11 +497,10 @@ html, body {
 
 .product-accessory img {
   width: 100%;
-  max-height: 60px;
+  max-height: 85px;
   object-fit: contain;
-  mix-blend-mode: multiply;
-  filter: grayscale(1) brightness(1.05) contrast(1.4) sepia(12%);
-  opacity: 0.85;
+  filter: invert(0.82) grayscale(1) brightness(1.05) contrast(1.3) sepia(18%);
+  opacity: 0.75;
 }
 
 .product-accessory span {
