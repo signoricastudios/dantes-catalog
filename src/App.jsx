@@ -226,15 +226,9 @@ const ProductPage = forwardRef((props, ref) => (
           or superior quality</strong> when stocks are depleted. Write
           to our San Francisco office for current availability.
         </p>
-        <div className="product-spec-list">
-          <p><span>SHELL</span> 100% Cotton Cavalry Twill</p>
-          <p><span>COLOR</span> Black (PANTONE 19-4006)</p>
-          <p><span>COLLAR</span> Black Suede</p>
-          <p><span>STITCH</span> Contrast, Saddle Pattern</p>
-          <p><span>BACK</span> Vertebrae Spine Detail</p>
-          <p><span>YOKE</span> Wheat Symbol — Famine</p>
-          <p><span>PLACKET</span> Diamond Chain Stitch</p>
-        </div>
+        <p className="product-specs-inline">
+          <strong>SHELL:</strong> 100% Cotton Cavalry Twill. <strong>COLOR:</strong> Black (PANTONE 19-4006). <strong>COLLAR:</strong> Black Suede. <strong>STITCH:</strong> Contrast, Saddle Pattern. <strong>BACK:</strong> Vertebrae Spine Detail. <strong>YOKE:</strong> Wheat Symbol — Famine. <strong>PLACKET:</strong> Diamond Chain Stitch.
+        </p>
       </div>
 
       {/* Accessory illustrations */}
@@ -244,7 +238,7 @@ const ProductPage = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '90px', opacity: 0.85}} />
+          <img src="/IMG_1147_clean.png" alt="" style={{maxHeight: '70px', opacity: 0.85}} />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">
@@ -460,15 +454,9 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           through any <strong>authorized Dante's agent</strong> or by direct
           correspondence to our San Francisco office.
         </p>
-        <div className="product-spec-list">
-          <p><span>SHELL</span> Waxed Cotton Canvas (10oz)</p>
-          <p><span>COLOR</span> Burnt Umber (PANTONE 19-1217)</p>
-          <p><span>LINING</span> Unlined / Raw Seam</p>
-          <p><span>CAPE</span> Storm Cape, Double-Layer</p>
-          <p><span>VENT</span> Center Back Walking Vent</p>
-          <p><span>CLOSURE</span> Blackened Brass Snaps</p>
-          <p><span>LENGTH</span> Below Knee, Full Duster</p>
-        </div>
+        <p className="product-specs-inline">
+          <strong>SHELL:</strong> Waxed Cotton Canvas (10oz). <strong>COLOR:</strong> Burnt Umber (PANTONE 19-1217). <strong>LINING:</strong> Unlined / Raw Seam. <strong>CAPE:</strong> Storm Cape, Double-Layer. <strong>VENT:</strong> Center Back Walking Vent. <strong>CLOSURE:</strong> Blackened Brass Snaps. <strong>LENGTH:</strong> Below Knee, Full Duster.
+        </p>
       </div>
 
       {/* Accessory illustrations */}
@@ -478,7 +466,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <span>DANTE'S SEAL</span>
         </div>
         <div className="product-accessory">
-          <img src="/cowboy.png" alt="" style={{maxHeight: '75px', opacity: 0.75}} />
+          <img src="/cowboy.png" alt="" style={{maxHeight: '60px', opacity: 0.75}} />
           <span>DETAIL VIEW</span>
         </div>
         <div className="product-accessory">
