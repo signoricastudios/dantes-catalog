@@ -326,6 +326,10 @@ const DetailsPage = forwardRef((props, ref) => (
         <p className="callout-item"><span className="callout-letter">C.</span> Wheat symbol at yoke — mark of Famine</p>
         <p className="callout-item"><span className="callout-letter">D.</span> Western saddle-pattern contrast stitching</p>
         <p className="callout-item"><span className="callout-letter">E.</span> Black suede collar, folded point</p>
+        <p className="callout-item"><span className="callout-letter">F.</span> 12-SPI lockstitch throughout; 8-SPI at stress points</p>
+        <p className="callout-item"><span className="callout-letter">G.</span> Antique brass shanked buttons, lost-wax cast, each stamped D.O.S.</p>
+        <p className="callout-item"><span className="callout-letter">H.</span> Full cotton sateen lining, cut on the bias for drape</p>
+        <p className="callout-item"><span className="callout-letter">I.</span> Felled seams double-pressed; bar-tacked at pocket mouth &amp; cuff</p>
       </div>
 
       {/* Sizing */}
@@ -581,6 +585,10 @@ const DetailsPageDesperado = forwardRef((props, ref) => (
         <p className="callout-item"><span className="callout-letter">C.</span> Blackened brass snap closures, throat to hem</p>
         <p className="callout-item"><span className="callout-letter">D.</span> Center back walking vent, 18" deep</p>
         <p className="callout-item"><span className="callout-letter">E.</span> Interior carry pocket, left breast, concealed</p>
+        <p className="callout-item"><span className="callout-letter">F.</span> Triple-waxed flat-felled seams; beeswax-sealed raw edges</p>
+        <p className="callout-item"><span className="callout-letter">G.</span> Blackened brass snaps, 50-lb pull-tested, tumble-finished</p>
+        <p className="callout-item"><span className="callout-letter">H.</span> Unlined body; raw seam construction per original 1880s pattern</p>
+        <p className="callout-item"><span className="callout-letter">I.</span> Bar-tacked reinforcement at cape join, vent apex &amp; pocket mouth</p>
       </div>
 
       {/* Sizing */}
@@ -712,6 +720,13 @@ const OrderFormPage1 = forwardRef(({ formData, setFormData }, ref) => {
           </div>
         </div>
         
+        {/* Custom sizing & measurement notes */}
+        <div className="order-form-notes">
+          <p className="order-form-note-line"><strong>CUSTOM SIZING:</strong> Non-standard measurements accommodated at no additional charge. Supply chest, sleeve, and body length with order. Allow two additional weeks for custom work.</p>
+          <p className="order-form-note-line" style={{marginTop: '4px'}}><strong>IMPORTANT — MEASUREMENT INSTRUCTIONS:</strong> Measure over a shirt, arms at sides. Chest: fullest point, tape level. Sleeve: center back of neck to wrist, arm slightly bent. Errors in measurement are the responsibility of the purchaser.</p>
+          <p className="order-form-note-promo" style={{marginTop: '6px'}}>Order both garments and receive complimentary <strong>Dante's Canvas Compound</strong> (4 oz. tin) — our proprietary beeswax &amp; linseed formula for field re-waterproofing. A $24 value, included with dual orders only.</p>
+        </div>
+
         <div className="order-page-bottom">
           <span className="page-number">5</span>
           <p className="page-turn-hint">TURN OVER →</p>
