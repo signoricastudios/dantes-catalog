@@ -337,9 +337,9 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           alt="The Desperado"
           className="product-illustration"
           style={{
-            width: '58%',
-            height: '96%',
-            shapeOutside: 'polygon(0% 0%, 45% 0%, 47% 1%, 52% 2%, 55% 3%, 52% 4%, 47% 5%, 42% 6%, 39% 7%, 37% 8%, 35% 9%, 33% 10%, 35% 11%, 42% 12%, 52% 13%, 62% 14%, 69% 15%, 75% 16%, 77% 17%, 75% 18%, 69% 19%, 62% 20%, 55% 21%, 51% 22%, 49% 23%, 47% 24%, 45% 25%, 43% 26%, 45% 27%, 47% 28%, 49% 29%, 50% 30%, 51% 32%, 52% 34%, 51% 36%, 49% 38%, 51% 40%, 53% 42%, 52% 44%, 49% 46%, 47% 48%, 45% 50%, 43% 52%, 41% 54%, 40% 56%, 39% 58%, 41% 60%, 43% 62%, 41% 64%, 39% 66%, 37% 68%, 35% 70%, 37% 72%, 39% 74%, 41% 76%, 39% 78%, 37% 80%, 35% 82%, 37% 84%, 39% 86%, 37% 88%, 33% 90%, 31% 92%, 35% 94%, 39% 96%, 33% 98%, 27% 100%, 0% 100%)',
+            width: '62%',
+            height: '98%',
+            shapeOutside: 'polygon(0% 0%, 43% 0%, 44% 1%, 49% 2%, 52% 3%, 49% 4%, 44% 5%, 39% 6%, 36% 7%, 34% 8%, 32% 9%, 30% 10%, 32% 11%, 39% 12%, 49% 13%, 59% 14%, 66% 15%, 72% 16%, 74% 17%, 72% 18%, 66% 19%, 59% 20%, 52% 21%, 48% 22%, 46% 23%, 44% 24%, 42% 25%, 40% 26%, 42% 27%, 44% 28%, 46% 29%, 47% 30%, 48% 32%, 49% 34%, 48% 36%, 46% 38%, 48% 40%, 50% 42%, 49% 44%, 46% 46%, 44% 48%, 42% 50%, 40% 52%, 38% 54%, 37% 56%, 36% 58%, 38% 60%, 40% 62%, 38% 64%, 36% 66%, 34% 68%, 32% 70%, 34% 72%, 36% 74%, 38% 76%, 36% 78%, 34% 80%, 32% 82%, 34% 84%, 36% 86%, 34% 88%, 30% 90%, 28% 92%, 32% 94%, 36% 96%, 30% 98%, 24% 100%, 0% 100%)',
             shapeMargin: '1px'
           }}
         />
@@ -453,6 +453,33 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           available by post; include return postage. Order
           through any <strong>authorized Dante's agent</strong> or by direct
           correspondence to our San Francisco office.
+        </p>
+        <p className="product-copy">
+          The <strong>storm cape</strong> is cut from a separate panel of the
+          same bolt, matched for weight and grain. It is
+          attached at the <strong>shoulder yoke</strong> with a double row of
+          stitching — <em>one visible, one concealed</em> — so that the
+          cape may bear its own weight in a soaking rain
+          without pulling at the collar. The leading edge is
+          turned and <strong>bar-tacked</strong> at intervals of two inches to
+          prevent the wind from catching beneath. <em>Riders who
+          have crossed the Staked Plains in a norther will
+          appreciate this detail above all others.</em> The cape
+          extends fourteen inches from the neckline and
+          falls in a clean drape over the upper arms.
+        </p>
+        <p className="product-copy">
+          <em>Notation for agents and dealers</em>: the Desperado is
+          offered at <strong>wholesale terms</strong> on orders of four or more
+          coats. Specify measurements for each coat individually;
+          we do not cut to standard blocks. <strong>Freight is assessed</strong>
+          per the current express schedule — <em>heavy canvas ships
+          at double the catalogue rate</em>. All claims must reach
+          our office within fourteen days of receipt. We reserve
+          the right to substitute <strong>materials of equal or superior
+          quality</strong> when stocks run short. <em>Our current bolt of
+          Carolina canvas will supply orders through the end of
+          this quarter; write early to ensure your allotment.</em>
         </p>
         <p className="product-specs-inline">
           <strong>SHELL:</strong> Waxed Cotton Canvas (10oz). <strong>COLOR:</strong> Burnt Umber (PANTONE 19-1217). <strong>LINING:</strong> Unlined / Raw Seam. <strong>CAPE:</strong> Storm Cape, Double-Layer. <strong>VENT:</strong> Center Back Walking Vent. <strong>CLOSURE:</strong> Blackened Brass Snaps. <strong>LENGTH:</strong> Below Knee, Full Duster.
