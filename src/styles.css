@@ -948,3 +948,276 @@ html, body {
 .order-page {
   animation: page-element-enter 0.4s ease-out both;
 }
+
+/* ==========================================================================
+   INSIDE COVER - FILLED (Table of Contents + Editor's Note)
+   ========================================================================== */
+
+.inside-cover-filled {
+  justify-content: flex-start;
+  padding-top: 24px;
+}
+
+.inside-cover-rule {
+  border: none;
+  border-top: 1px solid var(--ink-ghost);
+  width: 60%;
+  margin: 12px auto;
+  opacity: 0.4;
+}
+
+.inside-toc {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.inside-toc-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.toc-entry {
+  display: flex;
+  align-items: baseline;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.55rem;
+  color: var(--ink-medium);
+  line-height: 1.9;
+}
+
+.toc-label {
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--ink);
+  min-width: 56px;
+}
+
+.toc-dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--ink-ghost);
+  margin: 0 4px;
+  position: relative;
+  top: -3px;
+}
+
+.toc-dest {
+  white-space: nowrap;
+  text-align: right;
+  font-style: italic;
+  color: var(--ink-light);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.5rem;
+}
+
+.inside-editor-note {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.editor-note-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.editor-note-copy {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.48rem;
+  color: var(--ink-medium);
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.editor-note-sign {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.48rem;
+  color: var(--ink-light);
+  text-align: right;
+  margin-top: 4px;
+}
+
+.inside-cover-footer {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.45rem;
+  color: var(--ink-ghost);
+  letter-spacing: 0.08em;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   ORDER PAGE 2 - DENSE VINTAGE INSTRUCTIONS
+   ========================================================================== */
+
+.order-page-dense {
+  padding: 16px 20px 12px;
+}
+
+.order-page-dense .order-title {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.order-instructions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}
+
+.order-section {
+  margin-bottom: 6px;
+}
+
+.order-section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+
+.order-section-copy {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.44rem;
+  color: var(--ink-medium);
+  line-height: 1.35;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.order-section-copy strong {
+  color: var(--ink);
+}
+
+.order-page-tagline {
+  margin-top: auto;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.order-page-tagline .inside-cover-ornament {
+  margin: 2px 0;
+  font-size: 0.7rem;
+}
+
+.order-tagline-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.5rem;
+  color: var(--ink-medium);
+  margin-bottom: 2px;
+}
+
+.order-tagline-sub {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.4rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-ghost);
+}
+
+/* ==========================================================================
+   BACK COVER - FULL DESIGN
+   ========================================================================== */
+
+.back-cover-full {
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative border on back cover */
+.back-cover-full::before {
+  content: '';
+  position: absolute;
+  inset: 24px;
+  border: 1px solid var(--paper-shadow);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.back-cover-seal {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+}
+
+.back-cover-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  letter-spacing: 0.15em;
+  color: var(--paper);
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.back-cover-sub {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(0.9rem, 2.5vw, 1.3rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--paper);
+  margin-bottom: 12px;
+}
+
+.back-cover-tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: clamp(0.65rem, 1.6vw, 0.85rem);
+  color: var(--paper);
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.back-cover-rule {
+  width: 40px;
+  height: 1px;
+  background: var(--paper-shadow);
+  opacity: 0.4;
+  margin: 0 auto 16px;
+}
+
+.back-cover-copy {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.5rem;
+  color: var(--paper);
+  opacity: 0.45;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.back-cover-volume {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--paper);
+  opacity: 0.35;
+}

@@ -27,13 +27,52 @@ const CoverPage = forwardRef((props, ref) => (
 
 const InsideCover = forwardRef((props, ref) => (
   <div className="page paper" ref={ref}>
-    <div className="inside-cover">
+    <div className="inside-cover inside-cover-filled">
       <p className="epigraph">For those who ride between worlds.</p>
       <div className="inside-cover-ornament">&#10045;</div>
       <p className="colophon">
         Est. in the year of our Lord, 2026<br/>
         San Francisco, California
       </p>
+
+      <hr className="inside-cover-rule" />
+
+      <div className="inside-toc">
+        <h3 className="inside-toc-title">CONTENTS</h3>
+        <div className="toc-entry"><span className="toc-label">Page 1</span><span className="toc-dots"></span><span className="toc-dest">The Highwayman — Cavalry Jacket</span></div>
+        <div className="toc-entry"><span className="toc-label">Page 2</span><span className="toc-dots"></span><span className="toc-dest">Construction &amp; Specifications</span></div>
+        <div className="toc-entry"><span className="toc-label">Page 3</span><span className="toc-dots"></span><span className="toc-dest">The Desperado — Full-Length Duster</span></div>
+        <div className="toc-entry"><span className="toc-label">Page 4</span><span className="toc-dots"></span><span className="toc-dest">Construction &amp; Technical Detail</span></div>
+        <div className="toc-entry"><span className="toc-label">Pages 5–6</span><span className="toc-dots"></span><span className="toc-dest">Order Form &amp; Terms</span></div>
+      </div>
+
+      <hr className="inside-cover-rule" />
+
+      <div className="inside-editor-note">
+        <h3 className="editor-note-title">A NOTE FROM THE WORKSHOP</h3>
+        <p className="editor-note-copy">
+          This first volume of the <em>Dante's Outlaw Supply</em> catalogue
+          presents two garments from our <strong>Famine Collection</strong> —
+          each one cut, stitched, and finished by hand in our San Francisco
+          workshop. We do not employ machines where a craftsman's hand will
+          serve. We do not cut corners where a rider's life may depend on
+          the integrity of a seam. Every pattern herein was drafted from
+          original cavalry specifications, improved upon through years of
+          hard use on the trail. We invite you to examine the work, read the
+          details, and judge for yourself whether this is the standard to
+          which your wardrobe ought to be held.
+        </p>
+        <p className="editor-note-sign">
+          — <em>The Editors, San Francisco, MMXXVI</em>
+        </p>
+      </div>
+
+      <div className="inside-cover-ornament">&#10045;</div>
+      <p className="inside-cover-footer">
+        ALL ITEMS GUARANTEED · SATISFACTION OR FULL CREDIT<br/>
+        <em>Catalogue No. 1 · Famine Collection · Limited Printing</em>
+      </p>
+
       <span className="page-number">i</span>
     </div>
   </div>
@@ -689,33 +728,99 @@ const OrderFormPage1 = forwardRef(({ formData, setFormData }, ref) => {
 const OrderFormPage2 = forwardRef((props, ref) => {
   return (
     <div className="page paper" ref={ref}>
-      <div className="order-page">
+      <div className="order-page order-page-dense">
         <h2 className="order-title">HOW TO ORDER</h2>
 
-        <div className="how-to-order">
-          <p className="order-intro">To place your order, contact us:</p>
-
-          <div className="contact-method">
-            <span className="contact-label">EMAIL</span>
-            <span className="contact-value">orders@dantesoutlaw.com</span>
+        <div className="order-instructions">
+          <div className="order-section">
+            <h4 className="order-section-title">BY POST</h4>
+            <p className="order-section-copy">
+              Complete the order form on the preceding page. Enclose payment in full
+              and post to: <strong>Dante's Outlaw Supply, 42 Montgomery Street,
+              San Francisco, California 94104</strong>. Include your name, shipping address,
+              item number, size, and quantity. Print clearly in ink.
+              Orders received without full payment will be held until remittance arrives.
+            </p>
           </div>
 
-          <div className="contact-method">
-            <span className="contact-label">INSTAGRAM</span>
-            <span className="contact-value">@dantesoutlaw</span>
+          <div className="order-section">
+            <h4 className="order-section-title">BY TELEGRAPH OR EMAIL</h4>
+            <p className="order-section-copy">
+              Wire orders accepted via Western Union, addressed DANTES SF.
+              Include item, size, and full name. Payment must follow by post within
+              seven days or the order will be released. Electronic correspondence:
+              <strong> orders@dantesoutlaw.com</strong>. Direct message: <strong>@dantesoutlaw</strong> on Instagram.
+            </p>
           </div>
 
-          <div className="contact-method">
-            <span className="contact-label">ONLINE</span>
-            <a className="contact-value contact-link" href="#" onClick={(e) => e.preventDefault()}>
-              Visit our online store
-            </a>
+          <div className="order-section">
+            <h4 className="order-section-title">ACCEPTED PAYMENT</h4>
+            <p className="order-section-copy">
+              Postal money order (preferred). Bank draft drawn on any U.S. bank.
+              Personal cheque — allow ten days for clearance before shipment.
+              Currency at sender's risk; we recommend registered post. Payment
+              processor for card transactions available at our online store.
+              No C.O.D. shipments. All prices are in U.S. dollars, net.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">SHIPPING &amp; DELIVERY</h4>
+            <p className="order-section-copy">
+              All orders ship from our San Francisco workshop. Allow <strong>six to
+              eight weeks</strong> for standard delivery by overland express. Rush
+              orders honored at additional charge of $15.00 — allow two to three
+              weeks. Freight charges assessed by weight and distance per the
+              current express schedule. We ship to all U.S. states and territories.
+              Foreign orders: write for rates.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">RETURNS &amp; EXCHANGES</h4>
+            <p className="order-section-copy">
+              Returns accepted within <strong>thirty days</strong> of receipt for full
+              credit toward any item in the catalogue. Garments must be unworn,
+              in original packaging, with tags attached. Exchanges for size
+              processed at no additional charge — include a note specifying
+              the new size. Return postage is the responsibility of the buyer.
+              Defective goods replaced without charge; see our guarantee.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">SIZE GUIDE</h4>
+            <p className="order-section-copy">
+              Measure the chest at its fullest point, arms relaxed at sides.
+              Allow <strong>one inch of ease</strong> for layering. If between sizes,
+              order the larger. Specify shoulder slope (erect, regular, or sloping)
+              for mail orders. Sleeve length measured from shoulder point to wrist.
+              Custom sizing available at $25.00 surcharge — include all measurements.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">TERMS &amp; CONDITIONS</h4>
+            <p className="order-section-copy">
+              All goods are guaranteed against defect in material and workmanship
+              for the natural life of the garment. Dante's reserves the right
+              to substitute materials of equal or superior quality when stocks
+              are depleted. Catalogue prices subject to change without notice.
+              Wholesale terms on application for orders of six or more. All
+              claims must be filed within ten days of receipt. This catalogue
+              supersedes all prior editions.
+            </p>
+          </div>
+
+          <div className="order-page-tagline">
+            <div className="inside-cover-ornament">&#10045;</div>
+            <p className="order-tagline-text">
+              <em>Built by hand. Worn with purpose. Guaranteed for life.</em>
+            </p>
+            <p className="order-tagline-sub">DANTE'S OUTLAW SUPPLY · SAN FRANCISCO · EST. MMXXVI</p>
           </div>
         </div>
 
-        <div className="seal-placeholder">
-          <span>OFFICIAL USE ONLY</span>
-        </div>
         <span className="page-number">6</span>
       </div>
     </div>
@@ -728,8 +833,21 @@ const OrderFormPage2 = forwardRef((props, ref) => {
 
 const BackCover = forwardRef((props, ref) => (
   <div className="page cover" ref={ref}>
-    <div className="back-cover">
-      <span>DANTE'S OUTLAW SUPPLY</span>
+    <div className="back-cover back-cover-full">
+      <img
+        src="/Copy_of_Dantes_Graphics_ps_zip_-_3.png"
+        alt=""
+        className="back-cover-seal"
+      />
+      <h2 className="back-cover-brand">Dante's</h2>
+      <h3 className="back-cover-sub">Outlaw Supply</h3>
+      <p className="back-cover-tagline">Garments for the Discerning Rider</p>
+      <div className="back-cover-rule"></div>
+      <p className="back-cover-copy">
+        Handcrafted in San Francisco from original cavalry patterns.<br/>
+        Every garment numbered, registered, and guaranteed for life.
+      </p>
+      <span className="back-cover-volume">Vol. I — MMXXVI</span>
     </div>
   </div>
 ))
