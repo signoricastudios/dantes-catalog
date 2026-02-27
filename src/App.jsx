@@ -116,7 +116,7 @@ const ProductPage = forwardRef((props, ref) => (
         </p>
         <p className="product-copy">
           A jacket of superior construction, <em>designed for those
-          who ride between worlds</em>. Cut from the finest black
+          who ride between worlds</em>. Cut from the finest black{' '}
           <strong>Cavalry Twill</strong> with contrast stitching in the <strong>Western
           Saddle Pattern</strong> throughout. Every stitch placed by the
           hand of a craftsman who learned his trade on the
@@ -136,7 +136,7 @@ const ProductPage = forwardRef((props, ref) => (
           Every seam is <strong>double-felled</strong> for durability on the
           trail. The <strong>saddle-pattern stitching</strong>, rendered in
           <strong>bone-white thread</strong>, runs continuous from shoulder
-          to cuff — <em>a hallmark of authentic Western craft</em>
+          to cuff — <em>a hallmark of authentic Western craft</em>{' '}
           dating to the earliest cavalry workshops of the
           Arizona Territory. We import our thread from
           the same <strong>New England mills</strong> that supplied the
@@ -172,7 +172,7 @@ const ProductPage = forwardRef((props, ref) => (
           and forgiving in the manner required by hard use</em>.
         </p>
         <p className="product-copy">
-          Available only through <strong>authorized Dante's agents</strong>
+          Available only through <strong>authorized Dante's agents</strong>{' '}
           or by direct correspondence. Each piece is numbered
           and registered in the <strong>Famine ledger</strong>. Satisfaction
           guaranteed or return within thirty days for full
@@ -222,7 +222,7 @@ const ProductPage = forwardRef((props, ref) => (
         <p className="product-copy">
           Our workshop foreman inspects each finished jacket
           under lamp before it leaves the cutting table. <em>Every
-          seam is tested under load; every button is set twice.</em>
+          seam is tested under load; every button is set twice.</em>{' '}
           The Highwayman has been worn by <strong>cattlemen, lawmen,
           and riders of every stripe</strong> from the Pecos to the
           Platte — and not one has been returned for failure
@@ -251,7 +251,7 @@ const ProductPage = forwardRef((props, ref) => (
         <p className="product-copy">
           <em>Notation for dealers and outfitters</em>: wholesale terms
           available on orders of six or more. Catalogue pricing
-          is net; no further discount applies. <strong>Freight charges</strong>
+          is net; no further discount applies. <strong>Freight charges</strong>{' '}
           assessed per the current express schedule. All claims
           must be filed within ten days of receipt. Dante's
           reserves the right to substitute <strong>materials of equal
@@ -383,7 +383,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <strong>Storm cape</strong> at the shoulders doubles as a rain
           shield. Deep <strong>walking vent</strong> at the rear allows a
           full stride — or a clean mount. <strong>Interior carry
-          pocket</strong>, left breast. <strong>Blackened brass snap closures</strong>
+          pocket</strong>, left breast. <strong>Blackened brass snap closures</strong>{' '}
           from throat to hem. The cape is cut wide enough
           to cover the arms in a downpour yet <em>lies flat
           against the back in dry weather</em>, adding not an
@@ -499,7 +499,7 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <em>Notation for agents and dealers</em>: the Desperado is
           offered at <strong>wholesale terms</strong> on orders of four or more
           coats. Specify measurements for each coat individually;
-          we do not cut to standard blocks. <strong>Freight is assessed</strong>
+          we do not cut to standard blocks. <strong>Freight is assessed</strong>{' '}
           per the current express schedule — <em>heavy canvas ships
           at double the catalogue rate</em>. All claims must reach
           our office within fourteen days of receipt. We reserve
