@@ -397,8 +397,8 @@ html, body {
   shape-image-threshold: 0.25;
   shape-margin: 3px;
   mix-blend-mode: multiply;
-  filter: brightness(0.92) contrast(1.08) sepia(22%) saturate(0.85);
-  opacity: 0.88;
+  filter: brightness(0.88) contrast(1.18) sepia(18%) saturate(0.78);
+  opacity: 0.92;
 }
 
 /* Wider variant for Desperado */
@@ -409,7 +409,7 @@ html, body {
 .product-copy {
   font-family: 'Libre Baskerville', serif;
   font-size: 0.46rem;
-  color: var(--ink-medium);
+  color: var(--ink);
   line-height: 1.12;
   margin-bottom: 0;
   text-align: justify;
