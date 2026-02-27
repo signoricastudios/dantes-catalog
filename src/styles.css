@@ -340,19 +340,19 @@ html, body {
   animation: page-element-enter 0.4s ease-out 0.2s both;
 }
 
-/* Price — floated into the negative space beside the illustration */
+/* Price — prominent block below title, right-aligned like Gambler */
 .product-price-float {
-  float: right;
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
   line-height: 1;
-  margin: -4px -2px 2px 6px;
+  margin: -6px 0 -4px 0;
 }
 
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: clamp(3rem, 10cqw, 5rem);
+  font-size: clamp(4rem, 14cqw, 7rem);
   color: var(--ink);
   margin-top: 0.12em;
 }
@@ -360,10 +360,10 @@ html, body {
 .product-price-amount {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: clamp(5.5rem, 20cqw, 9rem);
+  font-size: clamp(7rem, 28cqw, 14rem);
   color: var(--ink);
-  letter-spacing: -0.05em;
-  line-height: 0.70;
+  letter-spacing: -0.04em;
+  line-height: 0.68;
 }
 
 .product-tagline {
@@ -390,8 +390,8 @@ html, body {
 .product-illustration {
   float: left;
   width: 58%;
-  height: 80cqh;
-  margin: -8px 0 0 -4px;
+  height: 62cqh;
+  margin: -2px 0 0 -4px;
   object-fit: contain;
   object-position: left top;
   shape-image-threshold: 0.25;
