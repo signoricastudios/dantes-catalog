@@ -852,6 +852,32 @@ const OrderFormPage2 = forwardRef((props, ref) => {
           </div>
 
           <div className="order-section">
+            <h4 className="order-section-title">MATERIALS &amp; SOURCING</h4>
+            <p className="order-section-copy">
+              All leathers sourced from American tanneries — full-grain steer for
+              the Highwayman, split cowhide for the Desperado. Canvas is 12-oz.
+              army duck from Carolina mills, pre-washed and waxed in-house. Hardware
+              is solid brass, cast from our own dies. Thread is bonded nylon, rot-proof
+              and UV-resistant. Linings are cotton sateen, breathable and hard-wearing.
+              We accept no synthetic substitutes. Every material is tested to three times
+              the expected service load before entering production.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">OUR GUARANTEE</h4>
+            <p className="order-section-copy">
+              Every garment bearing the Dante's mark carries an unconditional
+              lifetime guarantee against defects in material and workmanship.
+              Should any seam fail, any fitting loosen, or any material prove
+              wanting under normal use, return the garment to our workshop and
+              we will repair or replace it without charge. This guarantee is
+              non-transferable and applies to the original purchaser only.
+              Damage from misuse, neglect, or alteration by outside parties is excluded.
+            </p>
+          </div>
+
+          <div className="order-section">
             <h4 className="order-section-title">THE FAMINE COLLECTION</h4>
             <p className="order-section-copy">
               This catalogue presents the inaugural Famine Collection — a limited
@@ -863,6 +889,30 @@ const OrderFormPage2 = forwardRef((props, ref) => {
               for re-orders and warranty claims. Future volumes available by subscription;
               write to our San Francisco office to register your interest. Mention this
               volume number for priority notification when Vol. II is released.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">DEALER &amp; OUTFITTER TERMS</h4>
+            <p className="order-section-copy">
+              Qualified dealers and outfitters may purchase at wholesale discount.
+              Minimum order: six garments of any combination. Terms: net thirty days
+              with approved credit. First orders require bank reference and trade
+              references from two established houses. Catalogues and display materials
+              furnished without charge. Write on business letterhead to our San Francisco
+              office for complete wholesale schedule and terms of trade.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">CORRESPONDENCE</h4>
+            <p className="order-section-copy">
+              Address all orders, inquiries, and correspondence to: Dante's Outlaw
+              Supply, 44 Montgomery Street, San Francisco, California. Enclose payment
+              or money order with all orders. Personal checks accepted but shipment
+              delayed until funds clear. We answer all letters within three business
+              days. Telegraph orders accepted at standard commercial rates — confirm
+              by post within the week.
             </p>
           </div>
 

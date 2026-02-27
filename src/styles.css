@@ -1121,25 +1121,25 @@ html, body {
 }
 
 .order-section {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   break-inside: avoid;
 }
 
 .order-section-title {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 0.48rem;
+  font-size: 0.52rem;
   letter-spacing: 0.12em;
   color: var(--ink);
-  margin-bottom: 0;
+  margin-bottom: 1px;
   text-transform: uppercase;
 }
 
 .order-section-copy {
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   color: var(--ink);
-  line-height: 1.18;
+  line-height: 1.32;
   text-align: justify;
   hyphens: auto;
 }
