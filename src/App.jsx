@@ -136,8 +136,8 @@ const ProductPage = forwardRef((props, ref) => (
             shapeOutside: 'url(/IMG_1147_clean.png)'
           }}
         />
-        <p className="product-copy">
-          DANTE'S OUTLAW SUPPLY is proud to present <em>the finest riding jacket
+        <p className="product-copy product-copy-first">
+          <span className="drop-cap">D</span>ANTE'S OUTLAW SUPPLY is proud to present <em>the finest riding jacket
           ever offered through this catalogue</em>. Fashioned after patterns
           secured from the <strong>cavalry workshops of Fort Huachuca</strong>, and improved
           upon by our master cutter in San Francisco. We invite the
@@ -399,8 +399,8 @@ const ProductPageDesperado = forwardRef((props, ref) => (
             shapeOutside: 'url(/cowboy.png)'
           }}
         />
-        <p className="product-copy">
-          A riding coat of unusual length and purpose. Cut
+        <p className="product-copy product-copy-first">
+          <span className="drop-cap">A</span>{' '}riding coat of unusual length and purpose. Cut
           to fall below the knee, <em>the Desperado shields its
           wearer from dust, rain, and the gaze of lawmen</em>.
           <strong>Waxed cotton canvas</strong>, <strong>ten-ounce weight</strong>, hand-finished

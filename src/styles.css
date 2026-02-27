@@ -422,6 +422,21 @@ html, body {
   margin-top: 0;
 }
 
+/* Vintage drop cap for first paragraph */
+.drop-cap {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 0.65;
+  margin: 0.02em 0.05em 0 -0.01em;
+  color: var(--ink);
+}
+
+.product-copy-first {
+  text-indent: 0;
+}
+
 .product-spec-divider {
   border: none;
   border-top: 1px solid var(--ink-ghost);
