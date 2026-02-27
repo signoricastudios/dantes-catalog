@@ -91,29 +91,22 @@ const ProductPage = forwardRef((props, ref) => (
         <span className="product-collection">FAMINE COLLECTION · VOL. I</span>
       </div>
 
-      {/* Title → Tagline → Price (stacked vertically) */}
-      <div className="product-title-bar">
+      {/* Unified content flow — title, price, illustration, and text as one composition */}
+      <div className="product-content">
         <h2 className="product-name">THE HIGHWAYMAN</h2>
         <div className="product-tagline">A Cavalry Jacket for the Discerning Rider</div>
-        <div className="product-price">
-          <span className="product-price-dollar">$</span>
-          <span className="product-price-amount">299</span>
-        </div>
-      </div>
-
-      <hr className="catalog-rule" />
-
-      {/* Main content — float-based text wrap */}
-      <div className="product-content">
         <img
           src="/IMG_1147_clean.png"
           alt="The Highwayman"
           className="product-illustration"
           style={{
-            shapeOutside: 'polygon(0% 0%, 28% 0%, 30% 1%, 38% 2%, 42% 3%, 44% 4%, 42% 5%, 38% 6%, 36% 7%, 34% 8%, 36% 9%, 38% 10%, 40% 11%, 42% 12%, 40% 14%, 38% 16%, 36% 18%, 38% 20%, 40% 22%, 42% 24%, 44% 26%, 46% 27%, 44% 28%, 40% 29%, 36% 30%, 34% 31%, 32% 32%, 30% 34%, 28% 36%, 26% 38%, 28% 40%, 30% 42%, 32% 43%, 34% 44%, 32% 45%, 30% 46%, 29% 48%, 30% 50%, 32% 52%, 36% 54%, 40% 56%, 42% 58%, 40% 60%, 36% 62%, 34% 64%, 32% 66%, 30% 68%, 28% 70%, 26% 72%, 24% 74%, 24% 76%, 26% 78%, 28% 80%, 30% 82%, 32% 84%, 30% 86%, 26% 88%, 24% 90%, 26% 92%, 30% 94%, 32% 96%, 26% 98%, 22% 100%, 0% 100%)',
-            shapeMargin: '1px'
+            shapeOutside: 'url(/IMG_1147_clean.png)'
           }}
         />
+        <div className="product-price product-price-float">
+          <span className="product-price-dollar">$</span>
+          <span className="product-price-amount">299</span>
+        </div>
         <p className="product-copy">
           DANTE'S OUTLAW SUPPLY is proud to present <em>the finest riding jacket
           ever offered through this catalogue</em>. Fashioned after patterns
@@ -361,31 +354,22 @@ const ProductPageDesperado = forwardRef((props, ref) => (
         <span className="product-collection">FAMINE COLLECTION · VOL. I</span>
       </div>
 
-      {/* Title → Tagline → Price (stacked vertically) */}
-      <div className="product-title-bar">
+      {/* Unified content flow — title, price, illustration, and text as one composition */}
+      <div className="product-content">
         <h2 className="product-name">THE DESPERADO</h2>
         <div className="product-tagline">A Full-Length Duster for the Open Road</div>
-        <div className="product-price">
-          <span className="product-price-dollar">$</span>
-          <span className="product-price-amount">399</span>
-        </div>
-      </div>
-
-      <hr className="catalog-rule" />
-
-      {/* Main content — float-based text wrap */}
-      <div className="product-content">
         <img
           src="/cowboy.png"
           alt="The Desperado"
-          className="product-illustration"
+          className="product-illustration product-illustration-wide"
           style={{
-            width: '62%',
-            height: '98%',
-            shapeOutside: 'polygon(0% 0%, 43% 0%, 44% 1%, 49% 2%, 52% 3%, 49% 4%, 44% 5%, 39% 6%, 36% 7%, 34% 8%, 32% 9%, 30% 10%, 32% 11%, 39% 12%, 49% 13%, 59% 14%, 66% 15%, 72% 16%, 74% 17%, 72% 18%, 66% 19%, 59% 20%, 52% 21%, 48% 22%, 46% 23%, 44% 24%, 42% 25%, 40% 26%, 42% 27%, 44% 28%, 46% 29%, 47% 30%, 48% 32%, 49% 34%, 48% 36%, 46% 38%, 48% 40%, 50% 42%, 49% 44%, 46% 46%, 44% 48%, 42% 50%, 40% 52%, 38% 54%, 37% 56%, 36% 58%, 38% 60%, 40% 62%, 38% 64%, 36% 66%, 34% 68%, 32% 70%, 34% 72%, 36% 74%, 38% 76%, 36% 78%, 34% 80%, 32% 82%, 34% 84%, 36% 86%, 34% 88%, 30% 90%, 28% 92%, 32% 94%, 36% 96%, 30% 98%, 24% 100%, 0% 100%)',
-            shapeMargin: '1px'
+            shapeOutside: 'url(/cowboy.png)'
           }}
         />
+        <div className="product-price product-price-float">
+          <span className="product-price-dollar">$</span>
+          <span className="product-price-amount">399</span>
+        </div>
         <p className="product-copy">
           A riding coat of unusual length and purpose. Cut
           to fall below the knee, <em>the Desperado shields its

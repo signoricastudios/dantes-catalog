@@ -299,6 +299,7 @@ html, body {
   flex-direction: column;
   padding: 1px 5px 1px;
   container-type: inline-size;
+  overflow: hidden;
 }
 
 /* Catalog header line */
@@ -323,92 +324,87 @@ html, body {
   letter-spacing: 0.1em;
 }
 
-/* Title + Price bar (stacked vertically) */
-.product-title-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 0;
-  animation: page-element-enter 0.4s ease-out 0.2s both;
-}
-
+/* Product name — now inside .product-content flow */
 .product-name {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: clamp(2.4rem, 10cqw, 5.5rem);
+  font-size: clamp(2.6rem, 11cqw, 6rem);
   letter-spacing: -0.02em;
   color: var(--ink);
   text-transform: uppercase;
-  line-height: 0.92;
+  line-height: 0.88;
   margin: 0;
   transform: scaleX(0.88);
   transform-origin: left;
+  animation: page-element-enter 0.4s ease-out 0.2s both;
 }
 
-.product-price {
+/* Price — floated into the negative space beside the illustration */
+.product-price-float {
+  float: right;
   display: flex;
   align-items: flex-start;
-  align-self: flex-start;
   line-height: 1;
-  margin-top: 0;
+  margin: 0 0 4px 4px;
+  clear: right;
 }
 
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: clamp(1.5rem, 5.5cqw, 2.8rem);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 10cqw, 5.5rem);
   color: var(--ink);
-  margin-top: 0.15em;
+  margin-top: 0.08em;
 }
 
 .product-price-amount {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: clamp(3.5rem, 14cqw, 7rem);
+  font-size: clamp(5rem, 22cqw, 12rem);
   color: var(--ink);
-  letter-spacing: -0.03em;
-  line-height: 0.82;
+  letter-spacing: -0.04em;
+  line-height: 0.78;
 }
 
 .product-tagline {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   color: var(--ink-light);
-  margin-bottom: 0;
+  margin-top: 1px;
+  margin-bottom: 2px;
   animation: page-element-enter 0.4s ease-out 0.6s both;
 }
 
-/* Decorative rule */
-.catalog-rule {
-  border: none;
-  border-top: 1px solid var(--ink-ghost);
-  margin: 0;
-}
-
-/* Main content — float-based text wrap */
+/* Main content — unified composition, no separate header/content split */
 .product-content {
   flex: 1;
   display: block;
   min-height: 0;
   overflow: hidden;
   padding-top: 0;
-  gap: 0;
+  position: relative;
 }
 
-/* Floated illustration — DOMINANT figure, text wraps organically around contour */
+/* Floated illustration — DOMINANT figure, text wraps organically via alpha channel */
 .product-illustration {
   float: left;
   width: 52%;
-  height: 92%;
+  min-height: 80vh;
+  max-height: 95vh;
   margin: 0 2px 0 -2px;
   object-fit: contain;
   object-position: left bottom;
   shape-image-threshold: 0.4;
-  shape-margin: 1px;
+  shape-margin: 8px;
   mix-blend-mode: multiply;
   filter: brightness(0.92) contrast(1.08) sepia(22%) saturate(0.85);
   opacity: 0.88;
+}
+
+/* Wider variant for Desperado */
+.product-illustration-wide {
+  width: 62%;
 }
 
 .product-copy {
