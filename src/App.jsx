@@ -67,6 +67,35 @@ const InsideCover = forwardRef((props, ref) => (
         </p>
       </div>
 
+      <hr className="inside-cover-rule" />
+
+      <div className="inside-editor-note">
+        <h3 className="editor-note-title">MATERIALS &amp; STANDARDS</h3>
+        <p className="editor-note-copy">
+          Every hide is selected by hand from American tanneries — full-grain
+          steer for structured coats, split cowhide for dusters that move with
+          the rider. Canvas is 12-oz. army duck from Carolina mills, pre-washed
+          and waxed in our workshop. All hardware is solid brass, cast from dies
+          we commission ourselves. Thread is bonded nylon — rot-proof, UV-resistant,
+          tested to three times expected service load. We accept no synthetic
+          substitutes. Every material that enters our workshop must meet the same
+          standard: it must outlast the man who wears it.
+        </p>
+      </div>
+
+      <hr className="inside-cover-rule" />
+
+      <div className="inside-editor-note">
+        <h3 className="editor-note-title">OUR GUARANTEE</h3>
+        <p className="editor-note-copy">
+          Every garment bearing the Dante's mark carries an unconditional lifetime
+          guarantee against defects in material and workmanship. Should any seam
+          fail, any fitting loosen, or any material prove wanting under normal use,
+          return the garment and we will repair or replace it without charge. We
+          stand behind our work absolutely. This is not a policy — it is a promise.
+        </p>
+      </div>
+
       <div className="inside-cover-ornament">&#10045;</div>
       <p className="inside-cover-footer">
         ALL ITEMS GUARANTEED · SATISFACTION OR FULL CREDIT<br/>

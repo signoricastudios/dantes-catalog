@@ -270,7 +270,7 @@ html, body {
   font-style: italic;
   font-size: 1.06rem;
   color: var(--ink-medium);
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .colophon {
@@ -284,7 +284,7 @@ html, body {
 .inside-cover-ornament {
   font-size: 1.0rem;
   color: var(--ink-ghost);
-  margin: 16px 0;
+  margin: 8px 0;
   opacity: 0.5;
 }
 
@@ -995,7 +995,7 @@ html, body {
 
 .inside-cover-filled {
   justify-content: flex-start;
-  padding-top: 24px;
+  padding-top: 16px;
 }
 
 .inside-cover-rule {
@@ -1008,7 +1008,7 @@ html, body {
 
 .inside-toc {
   width: 100%;
-  max-width: 280px;
+  max-width: 380px;
   margin: 0 auto;
 }
 
@@ -1057,7 +1057,7 @@ html, body {
 
 .inside-editor-note {
   width: 100%;
-  max-width: 300px;
+  max-width: 380px;
   margin: 0 auto;
   text-align: left;
 }
