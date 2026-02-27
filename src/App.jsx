@@ -341,6 +341,13 @@ const DetailsPage = forwardRef((props, ref) => (
 
       <hr className="catalog-rule" />
 
+      <p className="details-intro">
+        The Highwayman is built to standards that exceed any garment presently offered
+        by catalogue or retail house. Each jacket passes through fourteen hands before
+        leaving our workshop. The following points of construction are provided so that
+        the buyer may inspect his garment upon receipt and verify the quality for himself.
+      </p>
+
       {/* Construction callouts */}
       <div className="details-callouts">
         <p className="callout-item"><span className="callout-letter">A.</span> Diamond chain stitch placket with contrast thread</p>
@@ -590,6 +597,13 @@ const DetailsPageDesperado = forwardRef((props, ref) => (
       </div>
 
       <hr className="catalog-rule" />
+
+      <p className="details-intro">
+        The Desperado duster is patterned after the riding coats issued to frontier
+        cavalrymen in the 1880s. Our version retains the original proportions — full length,
+        storm cape, walking vent — while improving on durability through modern waxing
+        techniques and reinforced seam construction. Each coat is inspected at six stages.
+      </p>
 
       {/* Construction callouts */}
       <div className="details-callouts">

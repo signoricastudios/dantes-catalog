@@ -607,6 +607,16 @@ html, body {
   margin-top: 3px;
 }
 
+.details-intro {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.46rem;
+  color: var(--ink);
+  line-height: 1.25;
+  text-align: justify;
+  hyphens: auto;
+  margin: 0 0 4px;
+}
+
 /* Callouts */
 .details-callouts {
   margin: 6px 0;
@@ -616,9 +626,9 @@ html, body {
 
 .callout-item {
   font-family: 'Courier Prime', monospace;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   color: var(--ink-medium);
-  line-height: 1.75;
+  line-height: 1.55;
   padding: 1px 0;
   border-bottom: 1px dotted rgba(0,0,0,0.06);
 }
