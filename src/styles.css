@@ -297,7 +297,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1px 5px 1px;
+  padding: 0 4px 0;
   container-type: inline-size;
   overflow: hidden;
 }
@@ -332,8 +332,9 @@ html, body {
   letter-spacing: -0.02em;
   color: var(--ink);
   text-transform: uppercase;
-  line-height: 0.88;
+  line-height: 0.82;
   margin: 0;
+  margin-bottom: -2px;
   transform: scaleX(0.88);
   transform-origin: left;
   animation: page-element-enter 0.4s ease-out 0.2s both;
@@ -345,14 +346,13 @@ html, body {
   display: flex;
   align-items: flex-start;
   line-height: 1;
-  margin: 0 0 4px 4px;
-  clear: right;
+  margin: 0 0 4px 8px;
 }
 
 .product-price-dollar {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: clamp(2.5rem, 10cqw, 5.5rem);
+  font-size: clamp(2.5rem, 8cqw, 4rem);
   color: var(--ink);
   margin-top: 0.08em;
 }
@@ -360,10 +360,10 @@ html, body {
 .product-price-amount {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: clamp(5rem, 22cqw, 12rem);
+  font-size: clamp(4.5rem, 16cqw, 7rem);
   color: var(--ink);
   letter-spacing: -0.04em;
-  line-height: 0.78;
+  line-height: 0.75;
 }
 
 .product-tagline {
@@ -389,14 +389,14 @@ html, body {
 /* Floated illustration — DOMINANT figure, text wraps organically via alpha channel */
 .product-illustration {
   float: left;
-  width: 52%;
-  min-height: 80vh;
-  max-height: 95vh;
-  margin: 0 2px 0 -2px;
+  width: 55%;
+  min-height: 85vh;
+  max-height: 98vh;
+  margin: 0 0 0 -4px;
   object-fit: contain;
   object-position: left bottom;
-  shape-image-threshold: 0.4;
-  shape-margin: 8px;
+  shape-image-threshold: 0.3;
+  shape-margin: 6px;
   mix-blend-mode: multiply;
   filter: brightness(0.92) contrast(1.08) sepia(22%) saturate(0.85);
   opacity: 0.88;

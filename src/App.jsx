@@ -95,14 +95,6 @@ const ProductPage = forwardRef((props, ref) => (
       <div className="product-content">
         <h2 className="product-name">THE HIGHWAYMAN</h2>
         <div className="product-tagline">A Cavalry Jacket for the Discerning Rider</div>
-        <img
-          src="/IMG_1147_clean.png"
-          alt="The Highwayman"
-          className="product-illustration"
-          style={{
-            shapeOutside: 'url(/IMG_1147_clean.png)'
-          }}
-        />
         <div className="product-price product-price-float">
           <span className="product-price-dollar">$</span>
           <span className="product-price-amount">299</span>
@@ -132,6 +124,14 @@ const ProductPage = forwardRef((props, ref) => (
           they are the language of the trail</em>, read by those
           who know what to look for.
         </p>
+        <img
+          src="/IMG_1147_clean.png"
+          alt="The Highwayman"
+          className="product-illustration"
+          style={{
+            shapeOutside: 'url(/IMG_1147_clean.png)'
+          }}
+        />
         <p className="product-copy">
           Every seam is <strong>double-felled</strong> for durability on the
           trail. The <strong>saddle-pattern stitching</strong>, rendered in
@@ -358,14 +358,6 @@ const ProductPageDesperado = forwardRef((props, ref) => (
       <div className="product-content">
         <h2 className="product-name">THE DESPERADO</h2>
         <div className="product-tagline">A Full-Length Duster for the Open Road</div>
-        <img
-          src="/cowboy.png"
-          alt="The Desperado"
-          className="product-illustration product-illustration-wide"
-          style={{
-            shapeOutside: 'url(/cowboy.png)'
-          }}
-        />
         <div className="product-price product-price-float">
           <span className="product-price-dollar">$</span>
           <span className="product-price-amount">399</span>
@@ -399,6 +391,14 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <strong>Carolina mills</strong> that once supplied wagon covers to
           the overland freight companies.
         </p>
+        <img
+          src="/cowboy.png"
+          alt="The Desperado"
+          className="product-illustration product-illustration-wide"
+          style={{
+            shapeOutside: 'url(/cowboy.png)'
+          }}
+        />
         <p className="product-copy">
           Thirteen <strong>blackened brass snaps</strong> run throat to hem,
           each one forged and tumbled to resist corrosion in
