@@ -99,6 +99,14 @@ const ProductPage = forwardRef((props, ref) => (
           <span className="product-price-dollar">$</span>
           <span className="product-price-amount">299</span>
         </div>
+        <img
+          src="/IMG_1147_clean.png"
+          alt="The Highwayman"
+          className="product-illustration"
+          style={{
+            shapeOutside: 'url(/IMG_1147_clean.png)'
+          }}
+        />
         <p className="product-copy">
           DANTE'S OUTLAW SUPPLY is proud to present <em>the finest riding jacket
           ever offered through this catalogue</em>. Fashioned after patterns
@@ -124,14 +132,6 @@ const ProductPage = forwardRef((props, ref) => (
           they are the language of the trail</em>, read by those
           who know what to look for.
         </p>
-        <img
-          src="/IMG_1147_clean.png"
-          alt="The Highwayman"
-          className="product-illustration"
-          style={{
-            shapeOutside: 'url(/IMG_1147_clean.png)'
-          }}
-        />
         <p className="product-copy">
           Every seam is <strong>double-felled</strong> for durability on the
           trail. The <strong>saddle-pattern stitching</strong>, rendered in
@@ -362,6 +362,14 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <span className="product-price-dollar">$</span>
           <span className="product-price-amount">399</span>
         </div>
+        <img
+          src="/cowboy.png"
+          alt="The Desperado"
+          className="product-illustration product-illustration-wide"
+          style={{
+            shapeOutside: 'url(/cowboy.png)'
+          }}
+        />
         <p className="product-copy">
           A riding coat of unusual length and purpose. Cut
           to fall below the knee, <em>the Desperado shields its
@@ -391,14 +399,6 @@ const ProductPageDesperado = forwardRef((props, ref) => (
           <strong>Carolina mills</strong> that once supplied wagon covers to
           the overland freight companies.
         </p>
-        <img
-          src="/cowboy.png"
-          alt="The Desperado"
-          className="product-illustration product-illustration-wide"
-          style={{
-            shapeOutside: 'url(/cowboy.png)'
-          }}
-        />
         <p className="product-copy">
           Thirteen <strong>blackened brass snaps</strong> run throat to hem,
           each one forged and tumbled to resist corrosion in
