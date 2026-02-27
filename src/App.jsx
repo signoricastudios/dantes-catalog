@@ -811,6 +811,61 @@ const OrderFormPage2 = forwardRef((props, ref) => {
             </p>
           </div>
 
+          <div className="order-section">
+            <h4 className="order-section-title">CUSTOM &amp; BESPOKE ORDERS</h4>
+            <p className="order-section-copy">
+              Our workshop maintains patterns for over two hundred chest measurements.
+              For riders requiring alterations beyond our standard size range, we offer
+              full bespoke service at additional charge. Supply all measurements — chest,
+              waist, shoulder width, sleeve length, and back length — by post. A pattern
+              will be drafted to your exact specifications. Allow ten to twelve weeks for
+              bespoke delivery. Monogramming available on any garment at $10.00 per initial.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">ABOUT DANTE'S OUTLAW SUPPLY</h4>
+            <p className="order-section-copy">
+              Founded in San Francisco by riders, for riders. Every garment in this
+              catalogue is designed in our Montgomery Street workshop and constructed
+              by hand from materials we source directly from American mills. We keep
+              no factory; each piece is cut and sewn by craftsmen who understand that
+              a riding coat must endure what its owner endures. We do not advertise.
+              We do not discount. We build garments that outlast the men who wear them,
+              and we guarantee every stitch. Write for our complete catalogue or visit
+              our workshop by appointment. Dealers and outfitters: inquire for terms.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">CARE OF GARMENTS</h4>
+            <p className="order-section-copy">
+              Brush clean with horsehair after each wearing. Do not launder; spot-treat
+              with damp cloth only. Store flat or hang on broad wooden hanger — never
+              wire. Re-wax collar and cuffs seasonally with Dante's Saddle Compound,
+              sold separately. Canvas garments should be hung in open air after exposure
+              to rain; do not heat-dry. Suede components may be treated with a soft
+              brush and proprietary suede block. Brass fittings will develop a natural
+              patina; polish only if a bright finish is desired. With proper attention,
+              every Dante's garment will outlast its owner.
+            </p>
+          </div>
+
+          <div className="order-section">
+            <h4 className="order-section-title">THE FAMINE COLLECTION</h4>
+            <p className="order-section-copy">
+              This catalogue presents the inaugural Famine Collection — a limited
+              series of garments inspired by the four riders of legend. Vol. I
+              features the Highwayman cavalry jacket and the Desperado riding duster.
+              Subsequent volumes will introduce the remaining riders as patterns are
+              completed and materials secured. Each volume is numbered and printed in
+              limited quantity. Retain this catalogue — it serves as your reference
+              for re-orders and warranty claims. Future volumes available by subscription;
+              write to our San Francisco office to register your interest. Mention this
+              volume number for priority notification when Vol. II is released.
+            </p>
+          </div>
+
           <div className="order-page-tagline">
             <div className="inside-cover-ornament">&#10045;</div>
             <p className="order-tagline-text">
